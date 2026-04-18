@@ -57,7 +57,7 @@ completed: 2026-04-18
 - **Duration:** ~8 min
 - **Started:** 2026-04-18T00:00:00Z
 - **Completed:** 2026-04-18T00:08:00Z
-- **Tasks:** 1 of 2 (Task 2 is checkpoint:human-verify — awaiting human approval)
+- **Tasks:** 2 of 2 (Task 1 implementation + Task 2 checkpoint:human-verify approved)
 - **Files modified:** 2
 
 ## Accomplishments
@@ -71,7 +71,7 @@ Each task was committed atomically:
 
 1. **Task 1: Create MachineDetailAnimated client wrapper and wire it to the page** - `a9a1473` (feat)
 
-_Task 2 is a checkpoint:human-verify — pending visual approval in browser._
+2. **Task 2: checkpoint:human-verify — visual approval** - Approved by user
 
 ## Files Created/Modified
 - `src/components/catalogue/MachineDetailAnimated.tsx` - Client wrapper exporting MachineDetailAnimated (stagger container), AnimatedItem (fade+slide), AnimatedBadge (scale+fade), AnimatedCTA (delayed fade)
@@ -94,9 +94,9 @@ None
 None - no external service configuration required.
 
 ## Next Phase Readiness
-- Animation wrappers are in place; awaiting checkpoint:human-verify approval
-- Once approved, all 72 static machine routes will have entrance animations
-- Ready to proceed to plan 03-03 once checkpoint is cleared
+- Animation wrappers approved and in place; all 72 static machine routes have entrance animations
+- Client-wrapper pattern established and ready to reuse in future catalogue pages
+- Ready to proceed to plan 03-03
 
 ---
 *Phase: 03-product-pages*
