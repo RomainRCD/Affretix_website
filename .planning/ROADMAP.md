@@ -69,7 +69,12 @@ Plans:
   3. Visitor can see available accessories (BRH, godets, etc.) where applicable
   4. A clear label or badge indicates the service is always provided avec chauffeur/opérateur
   5. A prominent "Demander un devis" call-to-action is reachable from the product page
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — SSG route /catalogue/[slug]/[machineSlug] + all PROD-01..06 content in server component
+- [ ] 03-02-PLAN.md — motion/react entrance animations via MachineDetailAnimated client wrapper
+
 **UI hint**: yes
 
 ### Phase 4: Quote Form
@@ -105,6 +110,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation & Homepage | 4/4 | Complete    | 2026-04-18 |
 | 2. Catalogue | 3/3 | Complete    | 2026-04-18 |
-| 3. Product Pages | 0/TBD | Not started | - |
+| 3. Product Pages | 0/2 | Not started | - |
 | 4. Quote Form | 0/TBD | Not started | - |
 | 5. Polish & SEO | 0/TBD | Not started | - |
