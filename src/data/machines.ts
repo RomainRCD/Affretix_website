@@ -42,7 +42,7 @@ export const machines: Machine[] = [
       { label: '30-35t' },
     ],
     accessories: ['Godet terrassement', 'Godet curage', 'BRH', 'Pince de tri'],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'mini-pelle',
@@ -55,7 +55,7 @@ export const machines: Machine[] = [
       { label: '6t' },
     ],
     accessories: ['Godet terrassement', 'Godet curage', 'BRH', 'Tarière'],
-    imageUrl: 'https://images.unsplash.com/photo-1584467541268-b8f71eddcfc7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/ndYqT8EwNbQ?w=800&q=80',
   },
   {
     slug: 'bulldozer',
@@ -66,7 +66,7 @@ export const machines: Machine[] = [
       { label: 'D6 — 20t' },
       { label: 'D8 — 37t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/o77SCv_KN3U?w=800&q=80',
   },
   {
     slug: 'chargeuse-sur-pneus',
@@ -78,7 +78,7 @@ export const machines: Machine[] = [
       { label: '4m³ — 18t' },
     ],
     accessories: ['Godet grappin', 'Fourches'],
-    imageUrl: 'https://images.unsplash.com/photo-1566888596782-c7f41cc184c5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/bKsWTQD6AhY?w=800&q=80',
   },
   {
     slug: 'scraper',
@@ -86,7 +86,7 @@ export const machines: Machine[] = [
     familySlug: 'terrassement',
     description: 'Scraper pour décapage et transport de terres sur de grandes surfaces.',
     variants: [{ label: '15-20m³' }],
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/WLRQXDNH25s?w=800&q=80',
   },
   {
     slug: 'pelle-pneus',
@@ -98,7 +98,7 @@ export const machines: Machine[] = [
       { label: '20t' },
     ],
     accessories: ['Godet terrassement', 'BRH', 'Pince'],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'compacteur-de-sol',
@@ -106,7 +106,7 @@ export const machines: Machine[] = [
     familySlug: 'terrassement',
     description: "Pelle équipée d'un compacteur de sol intégré pour compacter en fond de fouille.",
     variants: [{ label: '20-25t' }],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'ripper',
@@ -114,7 +114,7 @@ export const machines: Machine[] = [
     familySlug: 'terrassement',
     description: 'Accessoire de défonçage pour terrain dur, monté sur bulldozer ou pelle.',
     variants: [{ label: 'Adapté D6', detail: 'Simple ou triple dent' }],
-    imageUrl: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/o77SCv_KN3U?w=800&q=80',
   },
   {
     slug: 'niveleuse-terrassement',
@@ -125,7 +125,7 @@ export const machines: Machine[] = [
       { label: '12t' },
       { label: '16t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/bKsWTQD6AhY?w=800&q=80',
   },
   {
     slug: 'pelle-longue-portee',
@@ -133,7 +133,7 @@ export const machines: Machine[] = [
     familySlug: 'terrassement',
     description: 'Pelle hydraulique avec bras allongé pour travaux de curage, berges et zones inaccessibles.',
     variants: [{ label: '20t — bras 18m' }],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'tractopelle',
@@ -141,7 +141,7 @@ export const machines: Machine[] = [
     familySlug: 'terrassement',
     description: "Engin polyvalent, chargeur à l'avant et pelleteuse à l'arrière.",
     variants: [{ label: 'Standard — 8t' }],
-    imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/ndYqT8EwNbQ?w=800&q=80',
   },
   {
     slug: 'pelle-rail-route',
@@ -149,7 +149,7 @@ export const machines: Machine[] = [
     familySlug: 'terrassement',
     description: 'Pelle adaptée pour interventions sur voies ferrées en configuration rail et route.',
     variants: [{ label: '14-18t' }],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
 
   // ─── Transport chantier ────────────────────────────────────────────────────
@@ -163,7 +163,7 @@ export const machines: Machine[] = [
       { label: '40t' },
       { label: '60t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/WLRQXDNH25s?w=800&q=80',
   },
   {
     slug: 'tombereau-rigide',
@@ -174,7 +174,7 @@ export const machines: Machine[] = [
       { label: '100t' },
       { label: '150t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/WLRQXDNH25s?w=800&q=80',
   },
   {
     slug: 'dumper-de-chantier',
@@ -186,7 +186,7 @@ export const machines: Machine[] = [
       { label: '3t' },
       { label: '6t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
   {
     slug: 'camion-benne-chantier',
@@ -197,7 +197,7 @@ export const machines: Machine[] = [
       { label: '8x4 — 20m³' },
       { label: '6x4 — 14m³' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
   {
     slug: 'transporteur-sur-chenilles',
@@ -205,7 +205,7 @@ export const machines: Machine[] = [
     familySlug: 'transport-chantier',
     description: 'Véhicule tout-terrain sur chenilles pour transport en zone inondée ou boueuse.',
     variants: [{ label: '2t — 5t' }],
-    imageUrl: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/WLRQXDNH25s?w=800&q=80',
   },
   {
     slug: 'convoyeur-de-chantier',
@@ -213,7 +213,7 @@ export const machines: Machine[] = [
     familySlug: 'transport-chantier',
     description: "Tapis convoyeur modulaire pour évacuation continue de déblais ou granulats.",
     variants: [{ label: '15m', detail: "Extensible jusqu'à 30m" }],
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
   {
     slug: 'remorque-porte-engins',
@@ -224,7 +224,7 @@ export const machines: Machine[] = [
       { label: '30t PTAC' },
       { label: '50t PTAC' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
 
   // ─── Voirie ───────────────────────────────────────────────────────────────
@@ -237,7 +237,7 @@ export const machines: Machine[] = [
       { label: 'Largeur 2,5 à 6m' },
       { label: 'Largeur 3 à 9m' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
   {
     slug: 'fraiseuse-froid',
@@ -249,7 +249,7 @@ export const machines: Machine[] = [
       { label: 'Largeur 1m' },
       { label: 'Largeur 2m' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
   {
     slug: 'repandeur-granulats',
@@ -257,7 +257,7 @@ export const machines: Machine[] = [
     familySlug: 'voirie',
     description: 'Gravillonneur automoteur pour répandage de granulats en couche de surface.',
     variants: [{ label: 'Largeur 2,5 à 4,5m' }],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
   {
     slug: 'balayeuse-aspiratrce',
@@ -265,7 +265,7 @@ export const machines: Machine[] = [
     familySlug: 'voirie',
     description: "Balayeuse aspiratrice automotrice pour nettoyage de chaussées et voiries après travaux.",
     variants: [{ label: '4m³ — 8m³' }],
-    imageUrl: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
   {
     slug: 'epandeuse-liant',
@@ -273,7 +273,7 @@ export const machines: Machine[] = [
     familySlug: 'voirie',
     description: "Répandeuse de bitume ou d'émulsion pour enduits superficiels et couches d'accrochage.",
     variants: [{ label: '4 000L — 8 000L' }],
-    imageUrl: 'https://images.unsplash.com/photo-1566888596782-c7f41cc184c5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
   {
     slug: 'recycleuse-sol',
@@ -281,7 +281,7 @@ export const machines: Machine[] = [
     familySlug: 'voirie',
     description: "Engin de recyclage des chaussées en place ou stabilisation de sol pour réhabilitation de voirie.",
     variants: [{ label: 'Largeur 2,4m' }],
-    imageUrl: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
   {
     slug: 'profileuse-accotements',
@@ -289,7 +289,7 @@ export const machines: Machine[] = [
     familySlug: 'voirie',
     description: "Machine de réglage et profilage d'accotements et fossés en bord de chaussée.",
     variants: [{ label: 'Standard' }],
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
 
   // ─── Compactage ───────────────────────────────────────────────────────────
@@ -303,7 +303,7 @@ export const machines: Machine[] = [
       { label: '7t' },
       { label: '12t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'compacteur-monocylindre',
@@ -315,7 +315,7 @@ export const machines: Machine[] = [
       { label: '14t' },
       { label: '20t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'compacteur-pieds-dameurs',
@@ -326,7 +326,7 @@ export const machines: Machine[] = [
       { label: '12t' },
       { label: '18t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'plaque-vibrante',
@@ -337,7 +337,7 @@ export const machines: Machine[] = [
       { label: '300 kg' },
       { label: '700 kg' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'compacteur-de-tranchee',
@@ -345,7 +345,7 @@ export const machines: Machine[] = [
     familySlug: 'compactage',
     description: 'Compacteur de fond de tranchée pour compactage des remblais de réseaux.',
     variants: [{ label: 'Largeur 30 à 60cm' }],
-    imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'rouleau-pneus',
@@ -353,7 +353,7 @@ export const machines: Machine[] = [
     familySlug: 'compactage',
     description: 'Compacteur pneumatique pour compactage de revêtements bitumineux et sols.',
     variants: [{ label: '12t — 30t' }],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'dame-sauteuse',
@@ -361,7 +361,7 @@ export const machines: Machine[] = [
     familySlug: 'compactage',
     description: 'Compacteur à percussion pour compactage en fond de tranchée et zones très confinées.',
     variants: [{ label: 'Thermique — 65 kg' }],
-    imageUrl: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'compacteur-guide-a-main',
@@ -369,7 +369,7 @@ export const machines: Machine[] = [
     familySlug: 'compactage',
     description: "Petit compacteur maniable guidé à la main pour zones d'accès très restreint.",
     variants: [{ label: '350 kg — 500 kg' }],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'compacteur-chaussee-lourde',
@@ -377,7 +377,7 @@ export const machines: Machine[] = [
     familySlug: 'compactage',
     description: 'Compacteur tandem ou monocylindre grande largeur pour autoroutes et grandes surfaces.',
     variants: [{ label: '20t — 26t' }],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
 
   // ─── VRD / Réseaux ────────────────────────────────────────────────────────
@@ -390,7 +390,7 @@ export const machines: Machine[] = [
       { label: 'Largeur 10-30cm, profondeur 1,5m' },
       { label: 'Largeur 30-60cm, profondeur 2m' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/ndYqT8EwNbQ?w=800&q=80',
   },
   {
     slug: 'pelle-a-godet-etroit',
@@ -402,7 +402,7 @@ export const machines: Machine[] = [
       { label: '6t — godet 30cm' },
     ],
     accessories: ['Godet curage 20cm', 'Godet curage 30cm'],
-    imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/ndYqT8EwNbQ?w=800&q=80',
   },
   {
     slug: 'aspiratrice-excavatrice',
@@ -410,7 +410,7 @@ export const machines: Machine[] = [
     familySlug: 'vrd-reseaux',
     description: 'Hydrocureuse et aspiratrice pour fouilles non destructives autour des réseaux existants.',
     variants: [{ label: '3m³ — 5m³' }],
-    imageUrl: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/ndYqT8EwNbQ?w=800&q=80',
   },
   {
     slug: 'pose-canalisations',
@@ -419,7 +419,7 @@ export const machines: Machine[] = [
     description: 'Pelle équipée d\'accessoires de manutention pour pose de buses et canalisations.',
     variants: [{ label: '14-20t' }],
     accessories: ['Pince à buses', 'Élingues'],
-    imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'compacteur-tranchee-vrd',
@@ -427,7 +427,7 @@ export const machines: Machine[] = [
     familySlug: 'vrd-reseaux',
     description: 'Compacteur de fond de tranchée articulé pour réseaux enterrés.',
     variants: [{ label: '30-50cm largeur' }],
-    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Rd7EJKxDAII?w=800&q=80',
   },
   {
     slug: 'chargeuse-vrd',
@@ -436,7 +436,7 @@ export const machines: Machine[] = [
     description: 'Chargeuse compacte sur chenilles ou pneus pour travaux VRD en site urbain.',
     variants: [{ label: '2,5t' }],
     accessories: ['Godet', 'Fourches', 'Tarière'],
-    imageUrl: 'https://images.unsplash.com/photo-1584467541268-b8f71eddcfc7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/bKsWTQD6AhY?w=800&q=80',
   },
   {
     slug: 'malaxeur-coulis',
@@ -444,7 +444,7 @@ export const machines: Machine[] = [
     familySlug: 'vrd-reseaux',
     description: 'Malaxeur et pompe à coulis pour injections de remblaiement de tranchées (sable-ciment).',
     variants: [{ label: 'Débit 2-6 m³/h' }],
-    imageUrl: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GGG8GxMX7s4?w=800&q=80',
   },
   {
     slug: 'gyrobroyeur',
@@ -452,7 +452,7 @@ export const machines: Machine[] = [
     familySlug: 'vrd-reseaux',
     description: "Gyrobroyeur hydraulique monté sur pelle pour débroussaillage des emprises VRD.",
     variants: [{ label: 'Largeur 1,2-2,4m' }],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'engin-bourrage-voie',
@@ -460,7 +460,7 @@ export const machines: Machine[] = [
     familySlug: 'vrd-reseaux',
     description: 'Engin de maintenance de voies ferrées pour travaux de bourrage et VRD ferroviaire.',
     variants: [{ label: 'Standard' }],
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/oYXwd_t6Dtc?w=800&q=80',
   },
   {
     slug: 'brise-beton',
@@ -471,7 +471,7 @@ export const machines: Machine[] = [
       { label: '3t + BRH 200 kg' },
       { label: '6t + BRH 500 kg' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/ndYqT8EwNbQ?w=800&q=80',
   },
 
   // ─── Manutention / Levage ─────────────────────────────────────────────────
@@ -485,7 +485,7 @@ export const machines: Machine[] = [
       { label: '80t' },
       { label: '130t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GiQoWgtkNzQ?w=800&q=80',
   },
   {
     slug: 'grue-a-tour',
@@ -496,7 +496,7 @@ export const machines: Machine[] = [
       { label: '40 mT — flèche 40m' },
       { label: '80 mT — flèche 60m' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/qLf2da3A6KE?w=800&q=80',
   },
   {
     slug: 'nacelle-articulee',
@@ -508,7 +508,7 @@ export const machines: Machine[] = [
       { label: 'Hauteur 20m' },
       { label: 'Hauteur 40m' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1612824859424-028fdde23eaa?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/xVoamshsHJo?w=800&q=80',
   },
   {
     slug: 'nacelle-ciseaux',
@@ -519,7 +519,7 @@ export const machines: Machine[] = [
       { label: 'Hauteur 6m — électrique' },
       { label: 'Hauteur 12m — thermique tout-terrain' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1612824859424-028fdde23eaa?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/xVoamshsHJo?w=800&q=80',
   },
   {
     slug: 'chariot-telescopique',
@@ -532,7 +532,7 @@ export const machines: Machine[] = [
       { label: '6t — 22m' },
     ],
     accessories: ['Fourches', 'Godet', 'Plateau à palettes'],
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/T5vevKkzsig?w=800&q=80',
   },
   {
     slug: 'palan-chaine',
@@ -544,7 +544,7 @@ export const machines: Machine[] = [
       { label: '5t' },
       { label: '10t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/qLf2da3A6KE?w=800&q=80',
   },
   {
     slug: 'chariot-elevateur',
@@ -556,7 +556,7 @@ export const machines: Machine[] = [
       { label: '4t' },
       { label: '7t' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1590099033615-be195f8d575a?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/82ZiY5pzl1c?w=800&q=80',
   },
   {
     slug: 'portique-levage',
@@ -564,7 +564,7 @@ export const machines: Machine[] = [
     familySlug: 'manutention-levage',
     description: "Portique mobile automoteur pour levage de charges en l'absence de grue fixe.",
     variants: [{ label: '5t — 20t' }],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GiQoWgtkNzQ?w=800&q=80',
   },
   {
     slug: 'grue-de-manutention',
@@ -572,7 +572,7 @@ export const machines: Machine[] = [
     familySlug: 'manutention-levage',
     description: 'Grue de chargement montée sur camion pour livraison et déchargement de matériaux lourds.',
     variants: [{ label: '15 mT — 30 mT' }],
-    imageUrl: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GiQoWgtkNzQ?w=800&q=80',
   },
   {
     slug: 'spider-lift',
@@ -583,7 +583,7 @@ export const machines: Machine[] = [
       { label: 'Hauteur 20m' },
       { label: 'Hauteur 35m' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1612824859424-028fdde23eaa?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/xVoamshsHJo?w=800&q=80',
   },
   {
     slug: 'monte-charge-chantier',
@@ -591,7 +591,7 @@ export const machines: Machine[] = [
     familySlug: 'manutention-levage',
     description: "Élévateur de chantier (mast climbing) pour montage de matériaux et personnel en hauteur.",
     variants: [{ label: "1t — jusqu'à 80m" }],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/xVoamshsHJo?w=800&q=80',
   },
 
   // ─── Béton / Fondations ───────────────────────────────────────────────────
@@ -605,7 +605,7 @@ export const machines: Machine[] = [
       { label: 'Flèche 42m' },
       { label: 'Flèche 52m' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GiQoWgtkNzQ?w=800&q=80',
   },
   {
     slug: 'malaxeur-beton',
@@ -616,7 +616,7 @@ export const machines: Machine[] = [
       { label: '6m³' },
       { label: '8m³' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1613899741959-2d93a5d43e58?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GGG8GxMX7s4?w=800&q=80',
   },
   {
     slug: 'foreuse-fondations',
@@ -627,7 +627,7 @@ export const machines: Machine[] = [
       { label: 'Diamètre 400-800mm' },
       { label: 'Diamètre 1 000-1 500mm' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'vibreur-beton',
@@ -638,7 +638,7 @@ export const machines: Machine[] = [
       { label: 'Aiguille 38mm' },
       { label: 'Aiguille 58mm' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GGG8GxMX7s4?w=800&q=80',
   },
   {
     slug: 'centrale-beton',
@@ -646,7 +646,7 @@ export const machines: Machine[] = [
     familySlug: 'beton-fondations',
     description: 'Centrale à béton mobile de chantier pour production autonome de béton sur site isolé.',
     variants: [{ label: 'Capacité 20-50 m³/h' }],
-    imageUrl: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/GGG8GxMX7s4?w=800&q=80',
   },
   {
     slug: 'sondeuse',
@@ -654,7 +654,7 @@ export const machines: Machine[] = [
     familySlug: 'beton-fondations',
     description: 'Foreuse légère pour sondages géotechniques, prélèvements de sol et reconnaissance de site.',
     variants: [{ label: 'Profondeur 20-50m' }],
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
 
   // ─── Démolition / Recyclage ───────────────────────────────────────────────
@@ -667,7 +667,7 @@ export const machines: Machine[] = [
       { label: 'Débit 80-150 t/h' },
       { label: 'Débit 200-350 t/h' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
   {
     slug: 'crible-mobile',
@@ -678,7 +678,7 @@ export const machines: Machine[] = [
       { label: 'Simple deck — débit 100 t/h' },
       { label: 'Triple deck — débit 300 t/h' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
   {
     slug: 'brh',
@@ -690,7 +690,7 @@ export const machines: Machine[] = [
       { label: '500 kg (pelle 10-14t)' },
       { label: '1 500 kg (pelle 20-35t)' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/ndYqT8EwNbQ?w=800&q=80',
   },
   {
     slug: 'pince-demolition',
@@ -701,7 +701,7 @@ export const machines: Machine[] = [
       { label: '600 kg' },
       { label: '2 500 kg' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'cisaille-ferraille',
@@ -712,7 +712,7 @@ export const machines: Machine[] = [
       { label: '1 200 kg' },
       { label: '3 000 kg' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'grappin-tri',
@@ -723,7 +723,7 @@ export const machines: Machine[] = [
       { label: 'Bennes 0,4 m³' },
       { label: 'Bennes 1,2 m³' },
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1571953932774-a40b76ae0d05?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/Mk2ls9UBO2E?w=800&q=80',
   },
   {
     slug: 'trommel',
@@ -731,7 +731,7 @@ export const machines: Machine[] = [
     familySlug: 'demolition-recyclage',
     description: 'Trommel rotatif sur chenilles pour criblage et tri de terre végétale, compost et déchets verts.',
     variants: [{ label: 'Débit 40-120 t/h' }],
-    imageUrl: 'https://images.unsplash.com/photo-1571953932774-a40b76ae0d05?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
   {
     slug: 'broyeur-beton-recycle',
@@ -739,6 +739,6 @@ export const machines: Machine[] = [
     familySlug: 'demolition-recyclage',
     description: 'Broyeur compact à mâchoires pour traitement de petits volumes de béton et moellons sur chantier.',
     variants: [{ label: 'Débit 20-50 t/h' }],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/uGEIMh-5MJw?w=800&q=80',
   },
 ]
