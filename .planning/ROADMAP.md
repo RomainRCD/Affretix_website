@@ -13,7 +13,7 @@ Five phases take the project from a blank Next.js repo to a production-ready sit
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Homepage** - Next.js setup, design system, global layout, homepage (completed 2026-04-18)
-- [ ] **Phase 2: Catalogue** - Machine families page, family listings, data layer, responsive layout, animations
+- [x] **Phase 2: Catalogue** - Machine families page, family listings, data layer, responsive layout, animations (completed 2026-04-18)
 - [ ] **Phase 3: Product Pages** - Individual machine detail pages with capacities, accessories, and devis CTA
 - [ ] **Phase 4: Quote Form** - Functional devis form with pre-fill, validation, and email delivery
 - [ ] **Phase 5: Polish & SEO** - Metadata, Open Graph, structured data, image performance, accessibility
@@ -104,7 +104,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Homepage | 4/4 | Complete    | 2026-04-18 |
-| 2. Catalogue | 0/3 | Not started | - |
+| 2. Catalogue | 3/3 | Complete    | 2026-04-18 |
 | 3. Product Pages | 0/TBD | Not started | - |
 | 4. Quote Form | 0/TBD | Not started | - |
 | 5. Polish & SEO | 0/TBD | Not started | - |
