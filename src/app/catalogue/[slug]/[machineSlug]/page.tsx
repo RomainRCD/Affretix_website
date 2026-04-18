@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { machines } from '@/data/machines'
 import { machineFamilies } from '@/data/families'
+import { MachineDetailAnimated, AnimatedItem, AnimatedBadge, AnimatedCTA } from '@/components/catalogue/MachineDetailAnimated'
 
 export const dynamicParams = false
 
@@ -86,32 +87,34 @@ export default async function MachinePage({
           )}
         </div>
 
-        {/* Right: Content */}
-        <div className="flex flex-col gap-6">
+        {/* Right: Content — animated via MachineDetailAnimated client wrapper */}
+        <MachineDetailAnimated>
           {/* Machine name — PROD-01 */}
-          <div>
+          <AnimatedItem>
             <p className="font-body text-sm text-grey-dark/50 uppercase tracking-widest mb-1">
               {family?.name ?? slug}
             </p>
             <h1 className="font-heading font-bold text-3xl md:text-4xl text-grey-dark uppercase leading-tight">
               {machine.name}
             </h1>
-          </div>
+          </AnimatedItem>
 
           {/* Avec chauffeur badge — PROD-06 (ALWAYS shown) */}
-          <div>
+          <AnimatedBadge>
             <span className="inline-block bg-orange text-white font-heading uppercase text-sm px-4 py-1.5 tracking-wide">
               Avec chauffeur / opérateur
             </span>
-          </div>
+          </AnimatedBadge>
 
           {/* Description — PROD-01 */}
-          <p className="font-body text-grey-dark/70 leading-relaxed">
-            {machine.description}
-          </p>
+          <AnimatedItem>
+            <p className="font-body text-grey-dark/70 leading-relaxed">
+              {machine.description}
+            </p>
+          </AnimatedItem>
 
           {/* Variants — PROD-02 */}
-          <div>
+          <AnimatedItem>
             <h2 className="font-heading uppercase text-grey-dark font-semibold text-lg mb-3">
               Capacités disponibles
             </h2>
@@ -128,11 +131,11 @@ export default async function MachinePage({
                 </div>
               ))}
             </div>
-          </div>
+          </AnimatedItem>
 
           {/* Accessories — PROD-03 (conditional) */}
           {machine.accessories && machine.accessories.length > 0 && (
-            <div>
+            <AnimatedItem>
               <h2 className="font-heading uppercase text-grey-dark font-semibold text-lg mb-3">
                 Accessoires disponibles
               </h2>
@@ -146,19 +149,21 @@ export default async function MachinePage({
                   </span>
                 ))}
               </div>
-            </div>
+            </AnimatedItem>
           )}
 
           {/* Devis CTA — PROD-05 */}
-          <div className="mt-2">
-            <Link
-              href={`/contact?machine=${machine.slug}`}
-              className="flex items-center justify-center w-full md:w-auto bg-orange text-white font-heading uppercase text-lg px-8 py-4 hover:bg-orange/90 transition-colors tracking-wide"
-            >
-              Demander un devis
-            </Link>
-          </div>
-        </div>
+          <AnimatedCTA>
+            <div className="mt-2">
+              <Link
+                href={`/contact?machine=${machine.slug}`}
+                className="flex items-center justify-center w-full md:w-auto bg-orange text-white font-heading uppercase text-lg px-8 py-4 hover:bg-orange/90 transition-colors tracking-wide"
+              >
+                Demander un devis
+              </Link>
+            </div>
+          </AnimatedCTA>
+        </MachineDetailAnimated>
       </section>
     </main>
   )
