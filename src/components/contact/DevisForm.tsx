@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { motion, AnimatePresence } from 'motion/react'
+import Link from 'next/link'
 
 interface FormData {
   nom: string
@@ -288,12 +289,12 @@ function SuccessPanel() {
       <p className="font-body text-base text-grey-dark/70 max-w-sm">
         Merci pour votre demande. Notre équipe vous contactera dans les plus brefs délais pour établir votre devis.
       </p>
-      <a
+      <Link
         href="/catalogue"
         className="inline-block font-body text-sm font-semibold text-orange border border-orange px-6 py-3 hover:bg-orange hover:text-white transition-colors"
       >
         Retour au catalogue
-      </a>
+      </Link>
     </motion.div>
   )
 }
