@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { machineFamilies } from '@/data/families'
-import { FamilyCard } from '@/components/catalogue/FamilyCard'
+import { FamilyGrid } from '@/components/catalogue/FamilyGrid'
 
 export const metadata: Metadata = {
   title: 'Catalogue machines | Affretix',
@@ -20,11 +20,7 @@ export default function CataloguePage() {
         </p>
       </header>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {machineFamilies.map((family) => (
-          <FamilyCard key={family.slug} family={family} />
-        ))}
-      </div>
+      <FamilyGrid families={machineFamilies} />
     </main>
   )
 }

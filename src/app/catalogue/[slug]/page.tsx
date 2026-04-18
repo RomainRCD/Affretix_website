@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { machineFamilies } from '@/data/families'
 import { getMachinesByFamily } from '@/data/machines'
 import { FamilyHero } from '@/components/catalogue/FamilyHero'
-import { MachineCard } from '@/components/catalogue/MachineCard'
+import { MachineGrid } from '@/components/catalogue/MachineGrid'
 
 // Emit one static page per family at build time
 export async function generateStaticParams() {
@@ -42,11 +42,7 @@ export default async function FamilyPage({
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <FamilyHero family={family} machineCount={machines.length} />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">
-        {machines.map((machine) => (
-          <MachineCard key={machine.slug} machine={machine} />
-        ))}
-      </div>
+      <MachineGrid machines={machines} />
     </main>
   )
 }
