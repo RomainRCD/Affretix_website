@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Barlow_Condensed, DM_Sans } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 
 const barlowCondensed = Barlow_Condensed({
   weight: ['400', '700'],
@@ -27,7 +29,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${barlowCondensed.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <body className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }
