@@ -50,7 +50,13 @@ Plans:
   3. Machine images display correctly using manufacturer sources (Caterpillar, Liebherr, etc.)
   4. The catalogue layout is fully usable on mobile, tablet, and desktop viewports
   5. Hover states on machine cards are visually expressive and transitions between pages feel smooth (Framer Motion)
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Unsplash remotePattern + imageUrls in machines.ts + /catalogue index page + FamilyCard component
+- [ ] 02-02-PLAN.md — /catalogue/[slug] family pages with generateStaticParams + MachineCard + FamilyHero
+- [ ] 02-03-PLAN.md — Framer Motion stagger animations (FamilyGrid, MachineGrid) + human-verify checkpoint
+
 **UI hint**: yes
 
 ### Phase 3: Product Pages
@@ -98,7 +104,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Homepage | 4/4 | Complete    | 2026-04-18 |
-| 2. Catalogue | 0/TBD | Not started | - |
+| 2. Catalogue | 0/3 | Not started | - |
 | 3. Product Pages | 0/TBD | Not started | - |
 | 4. Quote Form | 0/TBD | Not started | - |
 | 5. Polish & SEO | 0/TBD | Not started | - |
