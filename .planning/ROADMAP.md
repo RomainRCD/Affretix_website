@@ -30,7 +30,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Visitor sees reassurance elements (key stats, group LEVA mention) on the homepage
   4. A footer with legal links and the groupe LEVA reference is visible on every page
   5. All text elements use Barlow Condensed for headings and DM Sans for body, with orange #F58634 and dark grey #353335 applied correctly throughout
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 01-PLAN-01-bootstrap.md — Next.js 15 bootstrap, Tailwind v4 brand tokens, font setup
+- [ ] 01-PLAN-02-layout.md — Header (8-family nav) + Footer (LEVA mention) + stub /contact page
+- [ ] 01-PLAN-03-homepage.md — Hero, FamilyGrid, Reassurance, ContactCTA sections composed into homepage
+- [ ] 01-PLAN-04-data.md — Complete TypeScript data layer: 8 families + 67+ machine types
+
 **UI hint**: yes
 
 ### Phase 2: Catalogue
@@ -90,7 +97,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Homepage | 0/TBD | Not started | - |
+| 1. Foundation & Homepage | 0/4 | Planned | - |
 | 2. Catalogue | 0/TBD | Not started | - |
 | 3. Product Pages | 0/TBD | Not started | - |
 | 4. Quote Form | 0/TBD | Not started | - |
