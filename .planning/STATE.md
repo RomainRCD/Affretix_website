@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Roadmap created, ready to plan Phase 1
-last_updated: "2026-04-18T11:22:30.417Z"
-last_activity: 2026-04-18 -- Phase 2 execution started
+stopped_at: Completed 02-catalogue-03-PLAN.md
+last_updated: "2026-04-18T11:32:32.672Z"
+last_activity: 2026-04-18
 progress:
   total_phases: 5
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 7
-  completed_plans: 4
-  percent: 57
+  completed_plans: 7
+  percent: 100
 ---
 
 # Project State
@@ -26,9 +26,9 @@ See: .planning/PROJECT.md (updated 2026-04-18)
 ## Current Position
 
 Phase: 2 (Catalogue) — EXECUTING
-Plan: 1 of 3
-Status: Executing Phase 2
-Last activity: 2026-04-18 -- Phase 2 execution started
+Plan: 2 of 3
+Status: Ready to execute
+Last activity: 2026-04-18
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 02-catalogue P03 | 15 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -65,6 +66,10 @@ Recent decisions affecting current work:
 - Init: Framer Motion for animations (smooth, no perf overhead)
 - Init: Content in JSON/TS files (no CMS required)
 - Init: Machine images sourced from manufacturer URLs (no Affretix photos available yet)
+- [Phase 02-catalogue]: FamilyGrid uses animate (not whileInView) — grid is above the fold, should fire on page load
+- [Phase 02-catalogue]: MachineGrid uses whileInView with viewport once:true — machines are below FamilyHero, scroll-triggered is appropriate
+- [Phase 02-catalogue]: ease typed as 'easeOut' as const to satisfy motion/react Variants TypeScript type
+- [Phase 02-catalogue]: Server components (page.tsx) remain server components — 'use client' boundary only in grid wrappers
 
 ### Pending Todos
 
@@ -77,6 +82,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-18
-Stopped at: Roadmap created, ready to plan Phase 1
+Last session: 2026-04-18T11:32:32.669Z
+Stopped at: Completed 02-catalogue-03-PLAN.md
 Resume file: None

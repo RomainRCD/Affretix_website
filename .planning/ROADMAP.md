@@ -53,9 +53,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Unsplash remotePattern + imageUrls in machines.ts + /catalogue index page + FamilyCard component
-- [ ] 02-02-PLAN.md — /catalogue/[slug] family pages with generateStaticParams + MachineCard + FamilyHero
-- [ ] 02-03-PLAN.md — Framer Motion stagger animations (FamilyGrid, MachineGrid) + human-verify checkpoint
+- [x] 02-01-PLAN.md — Unsplash remotePattern + imageUrls in machines.ts + /catalogue index page + FamilyCard component
+- [x] 02-02-PLAN.md — /catalogue/[slug] family pages with generateStaticParams + MachineCard + FamilyHero
+- [x] 02-03-PLAN.md — Framer Motion stagger animations (FamilyGrid, MachineGrid) + human-verify checkpoint
 
 **UI hint**: yes
 

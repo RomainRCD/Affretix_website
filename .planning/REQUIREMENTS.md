@@ -50,8 +50,8 @@
 
 - [ ] **UX-01** : Le design respecte la charte graphique officielle (orange #F58634, gris #353335, blanc #FFFFFF)
 - [ ] **UX-02** : La typographie utilise Barlow Condensed (titres) et DM Sans (corps)
-- [ ] **UX-03** : Les transitions et animations sont fluides (Framer Motion)
-- [ ] **UX-04** : Les hover states sur les cartes machines sont interactifs et expressifs
+- [x] **UX-03** : Les transitions et animations sont fluides (Framer Motion)
+- [x] **UX-04** : Les hover states sur les cartes machines sont interactifs et expressifs
 - [ ] **UX-05** : Le chargement des pages est rapide (images optimisées via next/image)
 
 ---
@@ -115,8 +115,8 @@
 | FORM-05 | Phase 4 | Pending |
 | UX-01 | Phase 1 | Pending |
 | UX-02 | Phase 1 | Pending |
-| UX-03 | Phase 2 | Pending |
-| UX-04 | Phase 2 | Pending |
+| UX-03 | Phase 2 | Complete |
+| UX-04 | Phase 2 | Complete |
 | UX-05 | Phase 5 | Pending |
 
 **Coverage :**
