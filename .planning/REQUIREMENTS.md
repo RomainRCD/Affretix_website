@@ -120,10 +120,10 @@
 | UX-05 | Phase 5 | Pending |
 
 **Coverage :**
-- v1 requirements : 25 total
-- Mappés en phases : 25
-- Non mappés : 0 ✓
+- v1 requirements : 29 total
+- Mapped to phases : 29
+- Unmapped : 0 ✓
 
 ---
 *Requirements définis : 2026-04-18*
-*Dernière mise à jour : 2026-04-18 après initialisation*
+*Dernière mise à jour : 2026-04-18 — roadmap créé, traceability confirmée*
