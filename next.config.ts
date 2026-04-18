@@ -8,6 +8,7 @@ const config: NextConfig = {
       { protocol: 'https', hostname: '**.liebherr.com' },
       { protocol: 'https', hostname: '**.volvoce.com' },
       { protocol: 'https', hostname: '**.komatsu.eu' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
   },
 }

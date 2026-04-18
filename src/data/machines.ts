@@ -42,6 +42,7 @@ export const machines: Machine[] = [
       { label: '30-35t' },
     ],
     accessories: ['Godet terrassement', 'Godet curage', 'BRH', 'Pince de tri'],
+    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
   },
   {
     slug: 'mini-pelle',
@@ -151,6 +152,7 @@ export const machines: Machine[] = [
       { label: '40t' },
       { label: '60t' },
     ],
+    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
   },
   {
     slug: 'tombereau-rigide',
@@ -218,6 +220,7 @@ export const machines: Machine[] = [
       { label: 'Largeur 2,5 à 6m' },
       { label: 'Largeur 3 à 9m' },
     ],
+    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
   },
   {
     slug: 'fraiseuse-froid',
@@ -277,6 +280,7 @@ export const machines: Machine[] = [
       { label: '7t' },
       { label: '12t' },
     ],
+    imageUrl: 'https://images.unsplash.com/photo-1590496793929-36417d3117de?w=800&q=80',
   },
   {
     slug: 'compacteur-monocylindre',
@@ -355,6 +359,7 @@ export const machines: Machine[] = [
       { label: 'Largeur 10-30cm, profondeur 1,5m' },
       { label: 'Largeur 30-60cm, profondeur 2m' },
     ],
+    imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
   },
   {
     slug: 'pelle-a-godet-etroit',
@@ -440,6 +445,7 @@ export const machines: Machine[] = [
       { label: '80t' },
       { label: '130t' },
     ],
+    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
   },
   {
     slug: 'grue-a-tour',
@@ -549,6 +555,7 @@ export const machines: Machine[] = [
       { label: 'Flèche 42m' },
       { label: 'Flèche 52m' },
     ],
+    imageUrl: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=800&q=80',
   },
   {
     slug: 'malaxeur-beton',
@@ -605,6 +612,7 @@ export const machines: Machine[] = [
       { label: 'Débit 80-150 t/h' },
       { label: 'Débit 200-350 t/h' },
     ],
+    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
   },
   {
     slug: 'crible-mobile',
