@@ -40,10 +40,10 @@
 
 ### Formulaire de Devis
 
-- [ ] **FORM-01** : Visiteur peut renseigner ses coordonnées (nom, entreprise, téléphone, email)
-- [ ] **FORM-02** : Visiteur peut préciser le type de machine pré-sélectionné (pré-rempli depuis la fiche)
-- [ ] **FORM-03** : Visiteur peut décrire son besoin (durée, lieu de chantier, description des travaux)
-- [ ] **FORM-04** : Visiteur reçoit une confirmation visuelle après envoi du formulaire
+- [x] **FORM-01** : Visiteur peut renseigner ses coordonnées (nom, entreprise, téléphone, email)
+- [x] **FORM-02** : Visiteur peut préciser le type de machine pré-sélectionné (pré-rempli depuis la fiche)
+- [x] **FORM-03** : Visiteur peut décrire son besoin (durée, lieu de chantier, description des travaux)
+- [x] **FORM-04** : Visiteur reçoit une confirmation visuelle après envoi du formulaire
 - [ ] **FORM-05** : Les données du formulaire sont envoyées par email à Affretix (via service tiers)
 
 ### Design & Expérience
@@ -108,10 +108,10 @@
 | PROD-04 | Phase 3 | Pending |
 | PROD-05 | Phase 3 | Pending |
 | PROD-06 | Phase 3 | Pending |
-| FORM-01 | Phase 4 | Pending |
-| FORM-02 | Phase 4 | Pending |
-| FORM-03 | Phase 4 | Pending |
-| FORM-04 | Phase 4 | Pending |
+| FORM-01 | Phase 4 | Complete |
+| FORM-02 | Phase 4 | Complete |
+| FORM-03 | Phase 4 | Complete |
+| FORM-04 | Phase 4 | Complete |
 | FORM-05 | Phase 4 | Pending |
 | UX-01 | Phase 1 | Pending |
 | UX-02 | Phase 1 | Pending |

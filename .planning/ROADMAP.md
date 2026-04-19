@@ -90,7 +90,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — DevisForm client component (all fields, useSearchParams pre-fill, validation, animated success panel) + contact page update
+- [x] 04-01-PLAN.md — DevisForm client component (all fields, useSearchParams pre-fill, validation, animated success panel) + contact page update
 - [ ] 04-02-PLAN.md — Resend API route + wire DevisForm fetch call + .env.local.example
 
 **UI hint**: yes
@@ -116,5 +116,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation & Homepage | 4/4 | Complete    | 2026-04-18 |
 | 2. Catalogue | 3/3 | Complete    | 2026-04-18 |
 | 3. Product Pages | 2/2 | Complete    | 2026-04-18 |
-| 4. Quote Form | 0/2 | Not started | - |
+| 4. Quote Form | 1/2 | In Progress|  |
 | 5. Polish & SEO | 0/TBD | Not started | - |
