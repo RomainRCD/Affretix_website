@@ -54,6 +54,7 @@ export function DevisForm() {
   const [errors, setErrors] = useState<FormErrors>({})
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
+  const [apiError, setApiError] = useState<string | null>(null)
 
   // Pre-fill machine field from ?machine= URL param (FORM-02)
   useEffect(() => {
@@ -92,11 +93,32 @@ export function DevisForm() {
     e.preventDefault()
     if (!validate()) return
     setSubmitting(true)
-    // STUB: Plan 02 will replace this with fetch('/api/contact', ...)
-    console.log('Form data:', formData)
-    await new Promise((r) => setTimeout(r, 600)) // Simulate network latency
-    setSubmitting(false)
-    setSubmitted(true)
+    setApiError(null)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        // API returned 4xx/5xx — show inline error, keep form filled
+        setApiError(data.error ?? "Une erreur s'est produite. Veuillez réessayer.")
+        setSubmitting(false)
+        return
+      }
+
+      // Success
+      setSubmitting(false)
+      setSubmitted(true)
+    } catch {
+      // Network error (no connection, DNS failure, etc.)
+      setApiError('Impossible de joindre le serveur. Vérifiez votre connexion et réessayez.')
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -215,6 +237,16 @@ export function DevisForm() {
               />
             </FormField>
           </fieldset>
+
+          {/* API error message */}
+          {apiError && (
+            <div
+              role="alert"
+              className="font-body text-sm text-red-600 bg-red-50 border border-red-200 px-4 py-3"
+            >
+              {apiError}
+            </div>
+          )}
 
           {/* Submit */}
           <button

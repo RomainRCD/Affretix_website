@@ -1,9 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-// Resend client — instantiated once per cold start
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 // Required fields that must be non-empty strings
 const REQUIRED = ['nom', 'telephone', 'email', 'description'] as const
 
@@ -94,6 +91,16 @@ export async function POST(request: NextRequest) {
   }
 
   // 4. Send via Resend
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
+    console.error('[contact] RESEND_API_KEY is not set')
+    return NextResponse.json(
+      { error: "Erreur de configuration serveur. Veuillez réessayer plus tard." },
+      { status: 500 }
+    )
+  }
+  const resend = new Resend(apiKey)
+
   try {
     const { error } = await resend.emails.send({
       // Use onboarding@resend.dev until Affretix domain is verified in Resend dashboard
