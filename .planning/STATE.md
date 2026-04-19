@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-04-19T15:32:40.032Z"
+status: verifying
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-04-19T15:50:45.527Z"
 last_activity: 2026-04-19
 progress:
   total_phases: 5
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 11
-  completed_plans: 10
-  percent: 91
+  completed_plans: 11
+  percent: 100
 ---
 
 # Project State
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-18)
 
 Phase: 4 (Quote Form) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-19
 
 Progress: [░░░░░░░░░░] 0%
@@ -56,6 +56,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 02-catalogue P03 | 15 | 2 tasks | 4 files |
 | Phase 04-quote-form P01 | 15 | 3 tasks | 2 files |
+| Phase 04-quote-form P02 | 5 | 3 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,9 @@ Recent decisions affecting current work:
 - [Phase 02-catalogue]: Server components (page.tsx) remain server components — 'use client' boundary only in grid wrappers
 - [Phase 04-quote-form]: Machine field is plain text (not select) — URL slug appears as-is; Plan 02 will format for email
 - [Phase 04-quote-form]: Submit handler is console.log stub in Plan 01; real Resend API call wired in Plan 02
+- [Phase 04-quote-form]: Resend client instantiated inside POST handler (not module scope) to avoid build-time throw when RESEND_API_KEY is absent
+- [Phase 04-quote-form]: apiError displayed inline below submit button — form fields preserved on failure so user can retry
+- [Phase 04-quote-form]: replyTo set to submitter email for easy reply from contact@affretix.fr inbox
 
 ### Pending Todos
 
@@ -87,6 +91,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-19T15:32:40.027Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-04-19T15:50:45.524Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None

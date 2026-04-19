@@ -44,7 +44,7 @@
 - [x] **FORM-02** : Visiteur peut préciser le type de machine pré-sélectionné (pré-rempli depuis la fiche)
 - [x] **FORM-03** : Visiteur peut décrire son besoin (durée, lieu de chantier, description des travaux)
 - [x] **FORM-04** : Visiteur reçoit une confirmation visuelle après envoi du formulaire
-- [ ] **FORM-05** : Les données du formulaire sont envoyées par email à Affretix (via service tiers)
+- [x] **FORM-05** : Les données du formulaire sont envoyées par email à Affretix (via service tiers)
 
 ### Design & Expérience
 
@@ -112,7 +112,7 @@
 | FORM-02 | Phase 4 | Complete |
 | FORM-03 | Phase 4 | Complete |
 | FORM-04 | Phase 4 | Complete |
-| FORM-05 | Phase 4 | Pending |
+| FORM-05 | Phase 4 | Complete |
 | UX-01 | Phase 1 | Pending |
 | UX-02 | Phase 1 | Pending |
 | UX-03 | Phase 2 | Complete |

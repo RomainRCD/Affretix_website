@@ -56,7 +56,7 @@ completed: 2026-04-19
 - **Duration:** ~3 min
 - **Started:** 2026-04-19T15:34:16Z
 - **Completed:** 2026-04-19T15:36:46Z
-- **Tasks:** 2 auto tasks completed (checkpoint:human-verify pending)
+- **Tasks:** 3 (2 auto + 1 checkpoint:human-verify — approved)
 - **Files modified:** 3 (created 2, modified 1)
 
 ## Accomplishments
@@ -119,7 +119,7 @@ To test email delivery:
 ## Next Phase Readiness
 
 - Full end-to-end devis form complete: UI → POST /api/contact → Resend → contact@affretix.fr
-- Human-verify checkpoint (Task 3) pending: reviewer should test live email delivery and error path
+- Human-verify checkpoint (Task 3) approved: end-to-end flow confirmed by reviewer (email delivery to be verified when RESEND_API_KEY is configured)
 - Future phases can add rate limiting via Vercel Edge Middleware or WAF (see T-04-08 in threat model)
 
 ---
