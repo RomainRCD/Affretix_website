@@ -16,6 +16,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Catalogue** - Machine families page, family listings, data layer, responsive layout, animations (completed 2026-04-18)
 - [x] **Phase 3: Product Pages** - Individual machine detail pages with capacities, accessories, and devis CTA (completed 2026-04-18)
 - [x] **Phase 4: Quote Form** - Functional devis form with pre-fill, validation, and email delivery (completed 2026-04-19)
+- [x] **Phase 4.1: Catalogue sync (INSERTED)** - Réalignement du catalogue sur le Google Sheet : 3 familles, 29 produits, 142 variantes (completed 2026-06-25)
+- [x] **Phase 4.2: Deploy Cloudflare (INSERTED)** - Workers + OpenNext, auto-deploy GitHub, garde-fous noindex, guide DEPLOY.md (completed 2026-06-25)
 - [ ] **Phase 5: Polish & SEO** - Metadata, Open Graph, structured data, image performance, accessibility
 
 ## Phase Details

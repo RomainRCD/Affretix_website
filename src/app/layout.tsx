@@ -19,7 +19,9 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: 'Affretix — Location de matériel BTP avec chauffeur',
-  description: 'Louez votre engin de chantier avec opérateur qualifié. 67+ engins : terrassement, transport, compactage et plus. Filiale du groupe LEVA.',
+  description: 'Louez votre engin de chantier avec opérateur qualifié. 150 engins : terrassement, transport et voirie, compactage. Filiale du groupe LEVA.',
+  // GARDE-FOU : site non public pour l'instant — à retirer au lancement officiel.
+  robots: { index: false, follow: false },
 }
 
 export default function RootLayout({

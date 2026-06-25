@@ -38,9 +38,9 @@ export function MachineCard({ machine }: { machine: Machine }) {
         {/* Capacity variant badges */}
         {machine.variants.length > 0 && (
           <div className="flex flex-wrap gap-1 mt-auto pt-2">
-            {machine.variants.map((v) => (
+            {machine.variants.map((v, i) => (
               <span
-                key={v.label}
+                key={`${v.label}-${i}`}
                 className="font-body text-xs bg-grey-dark/5 text-grey-dark/70 px-2 py-0.5 border border-grey-dark/10"
               >
                 {v.label}

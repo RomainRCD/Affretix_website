@@ -3,9 +3,9 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: verifying
-stopped_at: Completed 04-02-PLAN.md
-last_updated: "2026-04-19T15:50:45.527Z"
-last_activity: 2026-04-19
+stopped_at: Completed 04.2-deploy-cloudflare (config Workers/OpenNext + garde-fous)
+last_updated: "2026-06-25"
+last_activity: 2026-06-25
 progress:
   total_phases: 5
   completed_phases: 4
@@ -25,10 +25,10 @@ See: .planning/PROJECT.md (updated 2026-04-18)
 
 ## Current Position
 
-Phase: 4 (Quote Form) — EXECUTING
-Plan: 2 of 2
-Status: Phase complete — ready for verification
-Last activity: 2026-04-19
+Phase: 04.1 (INSERTED — Catalogue sync) — COMPLETE
+Plan: 1 of 1
+Status: Catalogue aligné sur le Google Sheet (3 familles / 29 produits / 142 variantes). Prochaine étape : fine-tuning d'une fiche produit de référence.
+Last activity: 2026-06-25
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -79,6 +79,10 @@ Recent decisions affecting current work:
 - [Phase 04-quote-form]: Resend client instantiated inside POST handler (not module scope) to avoid build-time throw when RESEND_API_KEY is absent
 - [Phase 04-quote-form]: apiError displayed inline below submit button — form fields preserved on failure so user can retry
 - [Phase 04-quote-form]: replyTo set to submitter email for easy reply from contact@affretix.fr inbox
+- [Phase 04.1-catalogue-sync]: Catalogue de référence = Google Sheet (gid 1827952040) — 3 familles remplacent les 8 d'origine
+- [Phase 04.1-catalogue-sync]: Orthographe corrigée à l'affichage ; libellés numériques ambigus conservés bruts (pas d'unité inventée)
+- [Phase 04.1-catalogue-sync]: Accessoires Terrassement = produits séparés (variants vides)
+- [Phase 04.1-catalogue-sync]: Page produit = point d'entrée SEA prioritaire ; home secondaire
 
 ### Pending Todos
 

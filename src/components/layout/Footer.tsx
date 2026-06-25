@@ -41,13 +41,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/catalogue/transport-chantier" className="font-body text-sm hover:text-orange transition-colors">
-                  Transport chantier
+                <Link href="/catalogue/transport-et-voirie" className="font-body text-sm hover:text-orange transition-colors">
+                  Transport et voirie
                 </Link>
               </li>
               <li>
-                <Link href="/catalogue/manutention-levage" className="font-body text-sm hover:text-orange transition-colors">
-                  Manutention / Levage
+                <Link href="/catalogue/compactage" className="font-body text-sm hover:text-orange transition-colors">
+                  Compactage
                 </Link>
               </li>
               <li>

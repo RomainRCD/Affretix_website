@@ -1,8 +1,8 @@
 const stats = [
   {
-    value: '67+',
-    label: "Types d'engins",
-    description: 'Terrassement, levage, compactage, voirie et plus',
+    value: '150',
+    label: 'Engins disponibles',
+    description: 'Terrassement, transport et voirie, compactage',
   },
   {
     value: '100%',

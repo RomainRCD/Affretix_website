@@ -35,7 +35,7 @@ export function Header() {
         </nav>
       </div>
 
-      {/* Family nav bar — desktop only, all 8 families */}
+      {/* Family nav bar — desktop only, all families */}
       <nav className="hidden lg:block border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ul className="flex items-center gap-1 overflow-x-auto">

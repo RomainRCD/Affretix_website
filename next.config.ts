@@ -14,3 +14,7 @@ const config: NextConfig = {
 }
 
 export default config
+
+// Intègre l'adaptateur OpenNext Cloudflare au serveur de dev Next (bindings locaux)
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare'
+initOpenNextCloudflareForDev()

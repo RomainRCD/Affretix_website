@@ -1,0 +1,8 @@
+# Cache long des assets statiques Next
+/_next/static/*
+  Cache-Control: public,max-age=31536000,immutable
+
+# GARDE-FOU : tant que le site n'est pas public, on bloque l'indexation moteurs.
+# À RETIRER au lancement officiel.
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive

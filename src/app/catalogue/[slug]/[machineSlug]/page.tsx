@@ -119,9 +119,9 @@ export default async function MachinePage({
               Capacités disponibles
             </h2>
             <div className="flex flex-wrap gap-2">
-              {machine.variants.map((variant) => (
+              {machine.variants.map((variant, i) => (
                 <div
-                  key={variant.label}
+                  key={`${variant.label}-${i}`}
                   className="bg-grey-dark/5 border border-grey-dark/10 px-4 py-3 inline-block"
                 >
                   <p className="font-heading font-bold text-grey-dark">{variant.label}</p>

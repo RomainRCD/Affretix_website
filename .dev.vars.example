@@ -1,0 +1,7 @@
+# Copie ce fichier en .dev.vars (non commité) pour le dev local avec le runtime Workers.
+# Environnement Next chargé localement (development | production)
+NEXTJS_ENV=development
+
+# Clé API Resend pour la route /api/contact (NE PAS commiter la vraie clé).
+# En prod, elle se configure côté Cloudflare en "secret", pas ici.
+RESEND_API_KEY=
