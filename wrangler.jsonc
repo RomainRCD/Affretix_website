@@ -23,7 +23,13 @@
   "images": {
     // Optimisation d'images via le binding Cloudflare
     "binding": "IMAGES"
-  }
+  },
+  // Domaines personnalisés attachés au Worker (créés au déploiement).
+  // L'apex affretix.fr est redirigé en 301 vers www par le middleware Next.
+  "routes": [
+    { "pattern": "affretix.fr", "custom_domain": true },
+    { "pattern": "www.affretix.fr", "custom_domain": true }
+  ]
   // Cache ISR via R2 désactivé pour l'instant (staging). Pour l'activer,
   // créer un bucket R2 et un binding "NEXT_INC_CACHE_R2_BUCKET" ici,
   // puis l'utiliser dans open-next.config.ts.
