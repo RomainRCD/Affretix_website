@@ -1,15 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand palette */
-  --color-orange: #F58634;
-  --color-grey-dark: #353335;
-  --color-gold: #C9A84C;
-  --color-white: #FFFFFF;
+  /* Palette — charte graphique officielle Affretix */
+  --color-orange: #F58634;        /* Principal */
+  --color-orange-dark: #D4601A;   /* Accent sombre */
+  --color-orange-light: #F5A55A;  /* Accent clair */
+  --color-grey-dark: #353335;     /* Texte */
+  --color-grey-light: #E0E0E0;    /* Fond alternatif */
+  --color-black: #000000;         /* Contraste */
+  --color-white: #FFFFFF;         /* Fond */
+  --color-gold: #C9A84C;          /* Lien groupe LEVA */
 
-  /* Typography — references CSS variables set by next/font in layout.tsx */
+  /* Typographie — charte : Display (Astrotec/Arial Black), Sous-titres (Barlow Condensed), Corps (DM Sans/Inter) */
+  --font-display: "Astrotec", "Arial Black", "Arial", sans-serif;
   --font-heading: var(--font-barlow-condensed), "Barlow Condensed", sans-serif;
-  --font-body: var(--font-dm-sans), "DM Sans", sans-serif;
+  --font-body: var(--font-dm-sans), "DM Sans", "Inter", system-ui, sans-serif;
 }
 
 body {
