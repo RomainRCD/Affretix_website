@@ -7,8 +7,13 @@ export function Header() {
     <header className="bg-grey-dark text-white">
       {/* Top bar: brand + CTA */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="font-heading text-2xl font-bold text-orange uppercase tracking-widest">
-          Affretix
+        <Link href="/" className="flex items-center" aria-label="Affretix — accueil">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-affretix-blanc-compact.png"
+            alt="Affretix — Location de matériel avec chauffeur"
+            className="h-9 w-auto"
+          />
         </Link>
         <nav className="hidden lg:flex items-center gap-6">
           <Link
