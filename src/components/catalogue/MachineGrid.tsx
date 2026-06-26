@@ -20,9 +20,8 @@ export function MachineGrid({ machines }: { machines: Machine[] }) {
     <motion.div
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10"
       variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      initial="visible"
+      animate="visible"
     >
       {machines.map((machine) => (
         <motion.div key={machine.slug} variants={itemVariants}>
