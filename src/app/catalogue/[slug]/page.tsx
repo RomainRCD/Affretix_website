@@ -10,9 +10,6 @@ export async function generateStaticParams() {
   return machineFamilies.map((family) => ({ slug: family.slug }))
 }
 
-// Prevent unknown slugs from triggering dynamic rendering — force 404
-export const dynamicParams = false
-
 export async function generateMetadata({
   params,
 }: {
