@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { machines } from '@/data/machines'
 import { machineFamilies } from '@/data/families'
-import { MachineDetailAnimated, AnimatedItem, AnimatedBadge, AnimatedCTA } from '@/components/catalogue/MachineDetailAnimated'
-
-export const dynamicParams = false
+import { ProductQuoteForm } from '@/components/catalogue/ProductQuoteForm'
 
 export async function generateStaticParams() {
   return machines.map((m) => ({
@@ -25,10 +22,32 @@ export async function generateMetadata({
   if (!machine) return {}
   const family = machineFamilies.find((f) => f.slug === slug)
   return {
-    title: `${machine.name} | ${family?.name ?? slug} | Affretix`,
-    description: machine.description,
+    title: `Location ${machine.name} avec chauffeur | ${family?.name ?? ''} | Affretix`,
+    description: `Louez un ${machine.name.toLowerCase()} avec opérateur qualifié. ${machine.description} Devis gratuit sous 24 h.`,
   }
 }
+
+const reassurance = [
+  {
+    icon: (
+      <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 0c-3.3 0-6 2-6 5m12 0c0-1.6-.8-2.9-2-3.8" />
+    ),
+    title: 'Chauffeur inclus',
+    text: "Opérateur qualifié, productif dès l'arrivée. Aucun permis requis de votre côté.",
+  },
+  {
+    icon: <path d="M13 3 4 14h7l-1 7 9-11h-7l1-7Z" />,
+    title: 'Intervention rapide',
+    text: 'Devis sous 24 h et mise à disposition rapide sur toute la région.',
+    gold: false,
+  },
+  {
+    icon: <path d="M12 3 4 6v6c0 5 3.4 7.4 8 9 4.6-1.6 8-4 8-9V6l-8-3Zm-1.5 9 1.5 1.5 3-3.5" />,
+    title: 'Caution Groupe LEVA',
+    text: "Filiale d'un groupe BTP régional reconnu — fiabilité et matériel entretenu.",
+    gold: true,
+  },
+]
 
 export default async function MachinePage({
   params,
@@ -40,131 +59,159 @@ export default async function MachinePage({
   if (!machine) notFound()
 
   const family = machineFamilies.find((f) => f.slug === slug)
+  const nameLower = machine.name.toLowerCase()
+
+  const useCases = [
+    `Transport et manutention sur chantier — ${family?.name.toLowerCase() ?? 'BTP'}`,
+    'Approvisionnement et évacuation de matériaux',
+    'Rotation sur gros volumes et délais serrés',
+    'Travaux ponctuels sans immobiliser votre propre matériel',
+  ]
+
+  const faq = [
+    {
+      q: 'Le chauffeur est-il vraiment inclus ?',
+      a: "Oui, chaque location se fait avec un opérateur qualifié. Vous n'avez ni permis ni manœuvre à gérer.",
+    },
+    {
+      q: 'Quel délai pour obtenir la machine ?',
+      a: 'Devis sous 24 h, puis mise à disposition selon disponibilité — généralement très rapide.',
+    },
+    {
+      q: 'Sur quelle zone intervenez-vous ?',
+      a: 'Toute la région, via le réseau du Groupe LEVA.',
+    },
+  ]
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Breadcrumb / Back link */}
-      <nav className="mb-8 flex items-center gap-2 font-body text-sm text-grey-dark/50">
-        <Link href="/catalogue" className="hover:text-orange transition-colors">
-          Catalogue
-        </Link>
-        <span>/</span>
-        <Link href={`/catalogue/${slug}`} className="hover:text-orange transition-colors">
-          {family?.name ?? slug}
-        </Link>
-        <span>/</span>
-        <span className="text-grey-dark/70">{machine.name}</span>
-      </nav>
+    <main>
+      <section className="bg-grey-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 lg:pb-16">
+          <nav className="flex items-center gap-2 font-body text-xs text-white/40 mb-6">
+            <Link href="/catalogue" className="hover:text-orange transition-colors">Catalogue</Link>
+            <span>/</span>
+            <Link href={`/catalogue/${slug}`} className="hover:text-orange transition-colors">{family?.name ?? slug}</Link>
+            <span>/</span>
+            <span className="text-white/70">{machine.name}</span>
+          </nav>
 
-      <Link
-        href={`/catalogue/${slug}`}
-        className="inline-flex items-center gap-1 font-body text-sm text-orange hover:underline mb-6"
-      >
-        ← Retour à {family?.name ?? slug}
-      </Link>
-
-      {/* Main content grid */}
-      <section className="grid md:grid-cols-2 gap-8 md:gap-12">
-        {/* Left: Image */}
-        <div>
-          {machine.imageUrl ? (
-            <div className="relative w-full md:h-[480px] aspect-[16/9] md:aspect-auto overflow-hidden">
-              <Image
-                src={machine.imageUrl}
-                alt={machine.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-              />
-            </div>
-          ) : (
-            <div className="relative w-full md:h-[480px] aspect-[16/9] md:aspect-auto bg-grey-dark/5 flex items-center justify-center">
-              <span className="font-body text-sm text-grey-dark/30 uppercase tracking-widest">
-                Image à venir
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            <div>
+              <span className="inline-flex items-center gap-2 border border-orange/40 bg-orange/10 text-orange px-3 py-1.5 font-body text-[11px] font-semibold uppercase tracking-widest">
+                <span className="w-1.5 h-1.5 rounded-full bg-orange block" />
+                Toujours avec opérateur qualifié
               </span>
-            </div>
-          )}
-        </div>
 
-        {/* Right: Content — animated via MachineDetailAnimated client wrapper */}
-        <MachineDetailAnimated>
-          {/* Machine name — PROD-01 */}
-          <AnimatedItem>
-            <p className="font-body text-sm text-grey-dark/50 uppercase tracking-widest mb-1">
-              {family?.name ?? slug}
-            </p>
-            <h1 className="font-heading font-bold text-3xl md:text-4xl text-grey-dark uppercase leading-tight">
-              {machine.name}
-            </h1>
-          </AnimatedItem>
+              <h1 className="font-heading font-bold uppercase leading-[1.05] text-4xl sm:text-5xl mt-4 mb-3">
+                Location de {machine.name}
+                <br />
+                <span className="text-orange">avec chauffeur</span>
+              </h1>
 
-          {/* Avec chauffeur badge — PROD-06 (ALWAYS shown) */}
-          <AnimatedBadge>
-            <span className="inline-block bg-orange text-white font-heading uppercase text-sm px-4 py-1.5 tracking-wide">
-              Avec chauffeur / opérateur
-            </span>
-          </AnimatedBadge>
+              <p className="font-body text-base text-white/75 max-w-md mb-6">
+                {machine.description} Livré avec son conducteur expérimenté — sans permis ni logistique à gérer.
+              </p>
 
-          {/* Description — PROD-01 */}
-          <AnimatedItem>
-            <p className="font-body text-grey-dark/70 leading-relaxed">
-              {machine.description}
-            </p>
-          </AnimatedItem>
-
-          {/* Variants — PROD-02 */}
-          <AnimatedItem>
-            <h2 className="font-heading uppercase text-grey-dark font-semibold text-lg mb-3">
-              Capacités disponibles
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {machine.variants.map((variant, i) => (
-                <div
-                  key={`${variant.label}-${i}`}
-                  className="bg-grey-dark/5 border border-grey-dark/10 px-4 py-3 inline-block"
-                >
-                  <p className="font-heading font-bold text-grey-dark">{variant.label}</p>
-                  {variant.detail && (
-                    <p className="font-body text-xs text-grey-dark/50 mt-0.5">{variant.detail}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </AnimatedItem>
-
-          {/* Accessories — PROD-03 (conditional) */}
-          {machine.accessories && machine.accessories.length > 0 && (
-            <AnimatedItem>
-              <h2 className="font-heading uppercase text-grey-dark font-semibold text-lg mb-3">
-                Accessoires disponibles
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {machine.accessories.map((accessory) => (
-                  <span
-                    key={accessory}
-                    className="bg-gold/10 text-grey-dark border border-gold/30 font-body text-sm px-3 py-1"
-                  >
-                    {accessory}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-x-6 gap-y-2.5 font-body text-sm">
+                <span className="flex items-center gap-2"><Dot /> Opérateur inclus</span>
+                <span className="flex items-center gap-2"><Dot /> Devis sous 24 h</span>
+                <span className="flex items-center gap-2"><Dot gold /> Groupe LEVA</span>
               </div>
-            </AnimatedItem>
-          )}
 
-          {/* Devis CTA — PROD-05 */}
-          <AnimatedCTA>
-            <div className="mt-2">
-              <Link
-                href={`/contact?machine=${machine.slug}`}
-                className="flex items-center justify-center w-full md:w-auto bg-orange text-white font-heading uppercase text-lg px-8 py-4 hover:bg-orange/90 transition-colors tracking-wide"
-              >
-                Demander un devis
-              </Link>
+              <div className="mt-6 border border-dashed border-white/15 rounded-lg h-28 flex items-center justify-center text-white/30 font-body text-xs uppercase tracking-widest">
+                Visuel {nameLower} — à venir
+              </div>
             </div>
-          </AnimatedCTA>
-        </MachineDetailAnimated>
+
+            <div className="lg:sticky lg:top-6">
+              <ProductQuoteForm machineName={machine.name} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-b border-grey-dark/10">
+        <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl">Capacités disponibles</h2>
+        <p className="font-body text-sm text-grey-dark/60 mt-1 mb-6 max-w-2xl">
+          Profondeur de gamme — on positionne la bonne machine selon votre tonnage et vos besoins.
+        </p>
+        {machine.variants.length > 0 ? (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {machine.variants.map((v, i) => (
+              <div key={`${v.label}-${i}`} className="border border-grey-dark/10 rounded-xl p-4">
+                <p className="font-heading font-bold text-2xl text-grey-dark">{v.label}</p>
+                {v.detail && <p className="font-body text-xs text-grey-dark/50 mt-1">{v.detail}</p>}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="font-body text-sm text-grey-dark/60">Accessoire disponible à la demande pour vos engins.</p>
+        )}
+      </section>
+
+      <section className="bg-[#faf9f7] border-b border-grey-dark/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl mb-6">Pourquoi Affretix</h2>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {reassurance.map((r) => (
+              <div key={r.title}>
+                <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={`w-7 h-7 ${r.gold ? 'stroke-gold' : 'stroke-orange'}`} aria-hidden="true">
+                  {r.icon}
+                </svg>
+                <p className="font-heading font-semibold uppercase text-base mt-2 mb-1">{r.title}</p>
+                <p className="font-body text-sm text-grey-dark/60">{r.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-b border-grey-dark/10">
+        <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl mb-5">Cas d&apos;usage</h2>
+        <div className="grid sm:grid-cols-2 gap-3">
+          {useCases.map((u) => (
+            <div key={u} className="flex gap-3 items-start">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-orange mt-1 shrink-0" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span className="font-body text-sm text-grey-dark/80">{u}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-[#faf9f7] border-b border-grey-dark/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl mb-5">Questions fréquentes</h2>
+          <div className="flex flex-col gap-2.5 max-w-3xl">
+            {faq.map((f) => (
+              <div key={f.q} className="border border-grey-dark/10 rounded-lg p-4 bg-white">
+                <p className="font-body font-semibold text-sm">{f.q}</p>
+                <p className="font-body text-sm text-grey-dark/60 mt-1">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-grey-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 text-center">
+          <h2 className="font-heading font-bold uppercase tracking-wide text-3xl sm:text-4xl mb-2">
+            Besoin d&apos;un {nameLower} avec chauffeur&nbsp;?
+          </h2>
+          <p className="font-body text-white/70 mb-6">Devis gratuit sous 24 h, sans engagement.</p>
+          <a
+            href="#devis"
+            className="inline-block bg-orange text-white px-8 py-4 font-heading font-semibold uppercase tracking-wide text-lg hover:bg-orange/90 transition-colors"
+          >
+            Demander mon devis
+          </a>
+        </div>
       </section>
     </main>
   )
+}
+
+function Dot({ gold = false }: { gold?: boolean }) {
+  return <span className={`w-1.5 h-1.5 rounded-full block ${gold ? 'bg-gold' : 'bg-orange'}`} />
 }
