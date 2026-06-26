@@ -10,9 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand column */}
           <div>
-            <p className="font-heading text-xl font-bold text-orange uppercase tracking-widest mb-2">
-              Affretix
-            </p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo-affretix-blanc.png"
+              alt="Affretix — Location de matériel avec chauffeur"
+              className="h-14 w-auto mb-3"
+            />
             <p className="font-body text-sm leading-relaxed">
               Location de matériel BTP avec chauffeur. Toutes nos prestations sont réalisées avec un opérateur qualifié.
             </p>
