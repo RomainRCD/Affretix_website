@@ -19,17 +19,6 @@ export function Footer() {
             <p className="font-body text-sm leading-relaxed">
               Location de matériel BTP avec chauffeur. Toutes nos prestations sont réalisées avec un opérateur qualifié.
             </p>
-            <p className="font-body text-sm mt-3">
-              Une filiale du{' '}
-              <a
-                href="https://www.groupe-leva.fr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gold hover:text-gold/80 font-semibold transition-colors"
-              >
-                Groupe LEVA
-              </a>
-            </p>
           </div>
 
           {/* Catalogue links */}
@@ -88,10 +77,6 @@ export function Footer() {
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="font-body text-xs">
             &copy; {currentYear} Affretix. Tous droits réservés.
-          </p>
-          <p className="font-body text-xs">
-            Filiale du{' '}
-            <span className="text-gold font-semibold">Groupe LEVA</span>
           </p>
         </div>
       </div>

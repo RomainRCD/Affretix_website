@@ -41,7 +41,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          150 engins disponibles. Terrassement, transport et voirie, compactage.
+          142 engins disponibles. Terrassement, transport et voirie, compactage.
           Filiale du groupe LEVA — présents sur toute la région.
         </motion.p>
 

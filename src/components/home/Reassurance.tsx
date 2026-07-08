@@ -1,6 +1,6 @@
 const stats = [
   {
-    value: '150',
+    value: '142',
     label: 'Engins disponibles',
     description: 'Terrassement, transport et voirie, compactage',
   },
