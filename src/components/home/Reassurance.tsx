@@ -10,9 +10,9 @@ const stats = [
     description: 'Chaque machine est livrée avec un chauffeur qualifié',
   },
   {
-    value: 'Groupe LEVA',
-    label: 'Votre garant',
-    description: "Filiale d'un groupe régional reconnu dans le BTP",
+    value: 'Sur-mesure',
+    label: 'Conseil chantier',
+    description: 'On vous oriente vers la machine adaptée à votre besoin',
   },
 ]
 
