@@ -23,7 +23,7 @@ export function Header() {
             Catalogue
           </Link>
           <Link
-            href="/contact"
+            href="/catalogue"
             className="font-body text-sm bg-orange text-white px-4 py-2 font-semibold hover:bg-orange/90 transition-colors"
           >
             Demander un devis
@@ -34,7 +34,7 @@ export function Header() {
           <Link href="/catalogue" className="font-body text-sm text-white/80 hover:text-orange transition-colors">
             Catalogue
           </Link>
-          <Link href="/contact" className="font-body text-sm bg-orange text-white px-3 py-1.5 text-xs font-semibold">
+          <Link href="/catalogue" className="font-body text-sm bg-orange text-white px-3 py-1.5 text-xs font-semibold">
             Devis
           </Link>
         </nav>

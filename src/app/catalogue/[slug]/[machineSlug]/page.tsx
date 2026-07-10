@@ -41,6 +41,19 @@ const reassurance = [
     text: 'Devis sous 24 h et mise à disposition rapide sur toute la région.',
     gold: false,
   },
+  {
+    icon: (
+      <>
+        <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
+        <path d="M4 14a2 2 0 0 1 2-2h1v6H6a2 2 0 0 1-2-2v-2Z" />
+        <path d="M20 14a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2v-2Z" />
+        <path d="M18 18a3 3 0 0 1-3 3h-2" />
+      </>
+    ),
+    title: 'Un seul interlocuteur',
+    text: 'Un contact dédié de la demande de devis à la fin de votre chantier.',
+    gold: false,
+  },
 ]
 
 export default async function MachinePage({
@@ -174,7 +187,7 @@ export default async function MachinePage({
       <section className="bg-[#faf9f7] border-b border-grey-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl mb-6">Pourquoi Affretix</h2>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl">
+          <div className="grid sm:grid-cols-3 gap-6">
             {reassurance.map((r) => (
               <div key={r.title}>
                 <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={`w-7 h-7 ${r.gold ? 'stroke-gold' : 'stroke-orange'}`} aria-hidden="true">
