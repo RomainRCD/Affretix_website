@@ -184,7 +184,7 @@ export default async function MachinePage({
         )}
       </section>
 
-      <section className="bg-[#faf9f7] border-b border-grey-dark/10">
+      <section className="bg-[#FBEEE2] border-b border-grey-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl mb-6">Pourquoi Affretix</h2>
           <div className="grid sm:grid-cols-3 gap-6">
@@ -215,7 +215,7 @@ export default async function MachinePage({
         </div>
       </section>
 
-      <section className="bg-[#faf9f7] border-b border-grey-dark/10">
+      <section className="bg-[#FBEEE2] border-b border-grey-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl mb-5">Questions fréquentes</h2>
           <div className="flex flex-col gap-2.5 max-w-3xl">
