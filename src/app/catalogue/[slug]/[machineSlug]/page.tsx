@@ -139,7 +139,7 @@ export default async function MachinePage({
             </div>
 
             <div className="lg:sticky lg:top-6">
-              <ProductQuoteForm machineName={machine.name} />
+              <ProductQuoteForm machineName={machine.name} variants={machine.variants} />
             </div>
           </div>
         </div>
