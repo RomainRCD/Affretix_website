@@ -61,6 +61,21 @@ export default async function MachinePage({
   const family = machineFamilies.find((f) => f.slug === slug)
   const nameLower = machine.name.toLowerCase()
 
+  // Regroupe les variantes par tonnage : "18 t" et "18 t + balayeuse avant"
+  // deviennent un seul bloc "18 t" portant l'option en pastille.
+  const capacities = machine.variants.reduce<{ label: string; options: string[] }[]>(
+    (acc, v) => {
+      const existing = acc.find((c) => c.label === v.label)
+      if (existing) {
+        if (v.detail) existing.options.push(v.detail)
+      } else {
+        acc.push({ label: v.label, options: v.detail ? [v.detail] : [] })
+      }
+      return acc
+    },
+    [],
+  )
+
   const useCases = [
     `Transport et manutention sur chantier — ${family?.name.toLowerCase() ?? 'BTP'}`,
     'Approvisionnement et évacuation de matériaux',
@@ -135,12 +150,26 @@ export default async function MachinePage({
         <p className="font-body text-sm text-grey-dark/60 mt-1 mb-6 max-w-2xl">
           Profondeur de gamme — on positionne la bonne machine selon votre tonnage et vos besoins.
         </p>
-        {machine.variants.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {machine.variants.map((v, i) => (
-              <div key={`${v.label}-${i}`} className="border border-grey-dark/10 rounded-xl p-4">
-                <p className="font-heading font-bold text-2xl text-grey-dark">{v.label}</p>
-                {v.detail && <p className="font-body text-xs text-grey-dark/50 mt-1">{v.detail}</p>}
+        {capacities.length > 0 ? (
+          <div className="flex flex-wrap gap-3 items-stretch">
+            {capacities.map((c, i) => (
+              <div
+                key={`${c.label}-${i}`}
+                className="flex flex-col justify-center gap-2.5 border border-grey-dark/10 rounded-xl px-6 py-4"
+              >
+                <p className="font-heading font-bold text-3xl text-grey-dark leading-none">{c.label}</p>
+                {c.options.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5">
+                    {c.options.map((o, j) => (
+                      <span
+                        key={j}
+                        className="font-body text-[13px] font-medium text-orange-dark bg-orange/10 px-2.5 py-1 rounded-full"
+                      >
+                        {o}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
