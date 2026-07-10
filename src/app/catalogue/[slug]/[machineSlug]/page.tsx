@@ -41,12 +41,6 @@ const reassurance = [
     text: 'Devis sous 24 h et mise à disposition rapide sur toute la région.',
     gold: false,
   },
-  {
-    icon: <path d="M12 3 4 6v6c0 5 3.4 7.4 8 9 4.6-1.6 8-4 8-9V6l-8-3Zm-1.5 9 1.5 1.5 3-3.5" />,
-    title: 'Caution Groupe LEVA',
-    text: "Filiale d'un groupe BTP régional reconnu — fiabilité et matériel entretenu.",
-    gold: true,
-  },
 ]
 
 export default async function MachinePage({
@@ -94,7 +88,7 @@ export default async function MachinePage({
     },
     {
       q: 'Sur quelle zone intervenez-vous ?',
-      a: 'Toute la région, via le réseau du Groupe LEVA.',
+      a: 'Toute la région. Indiquez votre zone de chantier dans la demande de devis.',
     },
   ]
 
@@ -130,7 +124,6 @@ export default async function MachinePage({
               <div className="flex flex-wrap gap-x-6 gap-y-2.5 font-body text-sm">
                 <span className="flex items-center gap-2"><Dot /> Opérateur inclus</span>
                 <span className="flex items-center gap-2"><Dot /> Devis sous 24 h</span>
-                <span className="flex items-center gap-2"><Dot gold /> Groupe LEVA</span>
               </div>
 
               <div className="mt-6 border border-dashed border-white/15 rounded-lg h-28 flex items-center justify-center text-white/30 font-body text-xs uppercase tracking-widest">
@@ -181,7 +174,7 @@ export default async function MachinePage({
       <section className="bg-[#faf9f7] border-b border-grey-dark/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="font-heading font-bold uppercase tracking-wide text-2xl sm:text-3xl mb-6">Pourquoi Affretix</h2>
-          <div className="grid sm:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-3xl">
             {reassurance.map((r) => (
               <div key={r.title}>
                 <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className={`w-7 h-7 ${r.gold ? 'stroke-gold' : 'stroke-orange'}`} aria-hidden="true">
