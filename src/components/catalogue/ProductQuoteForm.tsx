@@ -63,14 +63,13 @@ export function ProductQuoteForm({
   machineName: string
   variants?: Variant[]
 }) {
-  const materielOptions =
-    variants.length > 0
-      ? [machineName, ...variants.map((v) => `${machineName} ${v.label}${v.detail ? ` ${v.detail}` : ''}`)]
-      : [machineName]
+  const materielOptions = variants.map(
+    (v) => `${machineName} ${v.label}${v.detail ? ` ${v.detail}` : ''}`,
+  )
 
   const [step, setStep] = useState(1)
   const [form, setForm] = useState<FormData>({
-    materiel: machineName,
+    materiel: variants.length > 0 ? '' : machineName,
     siret: '',
     entreprise: '',
     adresseEntreprise: '',
@@ -234,6 +233,7 @@ export function ProductQuoteForm({
               onChange={(e) => set('materiel', e.target.value)}
               className={inputClass}
             >
+              <option value="" disabled>Choisir la capacité</option>
               {materielOptions.map((opt) => (
                 <option key={opt} value={opt}>{opt}</option>
               ))}
