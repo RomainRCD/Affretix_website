@@ -1,4 +1,7 @@
 // src/data/families.ts
+// machineCount est calculé depuis machines.json — ne plus le maintenir à la main.
+import MACHINES_DATA from './machines.json'
+const countFor = (slug: string) => (MACHINES_DATA as { familySlug: string }[]).filter((m) => m.familySlug === slug).length
 export type MachineFamily = {
   /** URL-safe slug used in /catalogue/[slug] route */
   slug: string
@@ -19,7 +22,7 @@ export const machineFamilies: MachineFamily[] = [
     description:
       'Pelles sur chenilles et sur pneus, mini-pelles, Mecalac, bulldozers, dumpers, chargeurs, chargeuses, tractopelles et accessoires pour tous vos travaux de terrassement.',
     icon: '🏗️',
-    machineCount: 23,
+    machineCount: countFor('terrassement'),
   },
   {
     slug: 'transport-et-voirie',
@@ -27,7 +30,7 @@ export const machineFamilies: MachineFamily[] = [
     description:
       'Balayeuses THP, tracteurs benne et tracteurs cuve pour le transport de matériaux, le nettoyage et l’entretien de voirie.',
     icon: '🚛',
-    machineCount: 3,
+    machineCount: countFor('transport-et-voirie'),
   },
   {
     slug: 'compactage',
@@ -35,6 +38,6 @@ export const machineFamilies: MachineFamily[] = [
     description:
       'Rouleaux compacteurs tandem, monocylindres vibrants et sur pneus pour la compaction des sols, graves et enrobés.',
     icon: '🔄',
-    machineCount: 3,
+    machineCount: countFor('compactage'),
   },
 ]

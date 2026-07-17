@@ -1,0 +1,719 @@
+[
+  {
+    "slug": "pelle-chenilles-ferraille",
+    "name": "Pelle sur chenilles ferraille",
+    "familySlug": "terrassement",
+    "description": "Pelle hydraulique sur chenilles configurée pour la manutention de ferraille, du 10 t au 50 t.",
+    "variants": [
+      {
+        "label": "10 t"
+      },
+      {
+        "label": "15 t"
+      },
+      {
+        "label": "18 t"
+      },
+      {
+        "label": "20 t"
+      },
+      {
+        "label": "22 t"
+      },
+      {
+        "label": "25 t"
+      },
+      {
+        "label": "30 t"
+      },
+      {
+        "label": "35 t"
+      },
+      {
+        "label": "40 t"
+      },
+      {
+        "label": "45 t"
+      },
+      {
+        "label": "50 t"
+      }
+    ]
+  },
+  {
+    "slug": "pelle-chenilles-caoutchouc",
+    "name": "Pelle sur chenilles caoutchouc",
+    "familySlug": "terrassement",
+    "description": "Pelle hydraulique sur chenilles caoutchouc pour terrassement sans agression des sols, du 10 t au 25 t.",
+    "variants": [
+      {
+        "label": "10 t"
+      },
+      {
+        "label": "15 t"
+      },
+      {
+        "label": "18 t"
+      },
+      {
+        "label": "20 t"
+      },
+      {
+        "label": "25 t"
+      }
+    ]
+  },
+  {
+    "slug": "pelle-sur-pneus",
+    "name": "Pelle sur pneus",
+    "familySlug": "terrassement",
+    "description": "Pelle hydraulique sur pneus, mobile sur route et chantier, du 5 t au 25 t.",
+    "variants": [
+      {
+        "label": "5 t"
+      },
+      {
+        "label": "8 t"
+      },
+      {
+        "label": "10 t"
+      },
+      {
+        "label": "12 t"
+      },
+      {
+        "label": "16 t"
+      },
+      {
+        "label": "18 t"
+      },
+      {
+        "label": "20 t"
+      },
+      {
+        "label": "25 t"
+      }
+    ]
+  },
+  {
+    "slug": "mini-pelle-chenilles",
+    "name": "Mini-pelle sur chenilles",
+    "familySlug": "terrassement",
+    "description": "Mini-pelle compacte pour travaux en espace réduit, du 2,5 t au 8 t.",
+    "variants": [
+      {
+        "label": "2,5 t"
+      },
+      {
+        "label": "3,5 t"
+      },
+      {
+        "label": "5 t"
+      },
+      {
+        "label": "8 t"
+      }
+    ]
+  },
+  {
+    "slug": "mecalac-chenilles",
+    "name": "Mecalac sur chenilles",
+    "familySlug": "terrassement",
+    "description": "Pelle Mecalac sur chenilles, polyvalente et compacte.",
+    "variants": [
+      {
+        "label": "6 t",
+        "detail": "6MCR"
+      },
+      {
+        "label": "8 t",
+        "detail": "8MCR"
+      },
+      {
+        "label": "10 t",
+        "detail": "10MCR"
+      }
+    ]
+  },
+  {
+    "slug": "mecalac-pneus",
+    "name": "Mecalac sur pneus",
+    "familySlug": "terrassement",
+    "description": "Pelle Mecalac sur pneus, mobile et polyvalente.",
+    "variants": [
+      {
+        "label": "7 t",
+        "detail": "7MVR"
+      },
+      {
+        "label": "9 t",
+        "detail": "9MVR"
+      },
+      {
+        "label": "11 t",
+        "detail": "11MVR"
+      },
+      {
+        "label": "15 t",
+        "detail": "15MVR"
+      }
+    ]
+  },
+  {
+    "slug": "mecalac-pelle-chargeuse",
+    "name": "Mecalac pelle-chargeuse",
+    "familySlug": "terrassement",
+    "description": "Mecalac pelle-chargeuse combinant terrassement et chargement.",
+    "variants": [
+      {
+        "label": "10 t · 12 MSX"
+      },
+      {
+        "label": "11 t · 12 MTX"
+      },
+      {
+        "label": "11 t · 12 MRX"
+      }
+    ]
+  },
+  {
+    "slug": "bulldozer",
+    "name": "Bulldozer",
+    "familySlug": "terrassement",
+    "description": "Bulldozer sur chenilles pour décapage, poussage de terres et travaux de masse.",
+    "variants": [
+      {
+        "label": "3"
+      },
+      {
+        "label": "4"
+      },
+      {
+        "label": "5"
+      },
+      {
+        "label": "6"
+      },
+      {
+        "label": "7"
+      },
+      {
+        "label": "8"
+      }
+    ]
+  },
+  {
+    "slug": "dumper-articule",
+    "name": "Dumper articulé",
+    "familySlug": "terrassement",
+    "description": "Tombereau articulé pour le transport de terres et matériaux en vrac, du 3 t au 60 t.",
+    "variants": [
+      {
+        "label": "3 t"
+      },
+      {
+        "label": "6 t"
+      },
+      {
+        "label": "8 t"
+      },
+      {
+        "label": "10 t"
+      },
+      {
+        "label": "25 t"
+      },
+      {
+        "label": "30 t"
+      },
+      {
+        "label": "35 t"
+      },
+      {
+        "label": "40 t"
+      },
+      {
+        "label": "45 t"
+      },
+      {
+        "label": "50 t"
+      },
+      {
+        "label": "60 t"
+      }
+    ]
+  },
+  {
+    "slug": "dumper-rigide",
+    "name": "Dumper rigide",
+    "familySlug": "terrassement",
+    "description": "Tombereau rigide haute capacité pour grands volumes, du 50 t au 100 t.",
+    "variants": [
+      {
+        "label": "50 t"
+      },
+      {
+        "label": "60 t"
+      },
+      {
+        "label": "100 t"
+      }
+    ]
+  },
+  {
+    "slug": "dumper-chenilles",
+    "name": "Dumper chenilles",
+    "familySlug": "terrassement",
+    "description": "Dumper sur chenilles pour terrains difficiles, versions standard et benne rotative 360°.",
+    "variants": [
+      {
+        "label": "2,5 t"
+      },
+      {
+        "label": "4 t"
+      },
+      {
+        "label": "4 t · 360"
+      },
+      {
+        "label": "6 t"
+      },
+      {
+        "label": "8 t"
+      },
+      {
+        "label": "8 t · 360"
+      },
+      {
+        "label": "10 t"
+      },
+      {
+        "label": "10 t · 360"
+      },
+      {
+        "label": "11 t"
+      },
+      {
+        "label": "11 t · 360"
+      },
+      {
+        "label": "13 t · 360"
+      },
+      {
+        "label": "16 t · 360"
+      },
+      {
+        "label": "20 t · 360"
+      }
+    ]
+  },
+  {
+    "slug": "chargeur-chenilles",
+    "name": "Chargeur sur chenilles",
+    "familySlug": "terrassement",
+    "description": "Chargeur sur chenilles pour chargement et nivellement, du 2 t au 30 t.",
+    "variants": [
+      {
+        "label": "2 t",
+        "detail": "T450"
+      },
+      {
+        "label": "2,5 t",
+        "detail": "T590"
+      },
+      {
+        "label": "3 t",
+        "detail": "T66"
+      },
+      {
+        "label": "4 t",
+        "detail": "T76"
+      },
+      {
+        "label": "5 t",
+        "detail": "T86"
+      },
+      {
+        "label": "15 t",
+        "detail": "953"
+      },
+      {
+        "label": "20 t",
+        "detail": "963"
+      },
+      {
+        "label": "30 t",
+        "detail": "973"
+      }
+    ]
+  },
+  {
+    "slug": "chargeur-pneus",
+    "name": "Chargeur sur pneus",
+    "familySlug": "terrassement",
+    "description": "Chargeur compact sur pneus pour chargement et manutention.",
+    "variants": [
+      {
+        "label": "1,3 t",
+        "detail": "S450"
+      },
+      {
+        "label": "2 t",
+        "detail": "S590"
+      },
+      {
+        "label": "2,5 t",
+        "detail": "S66"
+      }
+    ]
+  },
+  {
+    "slug": "chargeuse-articulee",
+    "name": "Chargeuse articulée",
+    "familySlug": "terrassement",
+    "description": "Chargeuse articulée sur pneus pour chargement de matériaux, du godet 800 L au 6500 L.",
+    "variants": [
+      {
+        "label": "800 L",
+        "detail": "L30"
+      },
+      {
+        "label": "1000 L",
+        "detail": "L35"
+      },
+      {
+        "label": "1200 L",
+        "detail": "L45"
+      },
+      {
+        "label": "1600 L",
+        "detail": "L50"
+      },
+      {
+        "label": "2000 L",
+        "detail": "L60"
+      },
+      {
+        "label": "2500 L",
+        "detail": "L70"
+      },
+      {
+        "label": "3000 L",
+        "detail": "L90"
+      },
+      {
+        "label": "3500 L",
+        "detail": "L110"
+      },
+      {
+        "label": "4000 L",
+        "detail": "L120"
+      },
+      {
+        "label": "4500 L",
+        "detail": "L150"
+      },
+      {
+        "label": "5000 L",
+        "detail": "L180"
+      },
+      {
+        "label": "5500 L",
+        "detail": "L220"
+      },
+      {
+        "label": "6000 L",
+        "detail": "L260"
+      },
+      {
+        "label": "6500 L",
+        "detail": "L350"
+      }
+    ]
+  },
+  {
+    "slug": "tractopelle",
+    "name": "Tractopelle",
+    "familySlug": "terrassement",
+    "description": "Tractopelle polyvalente combinant chargeur frontal et pelle arrière.",
+    "variants": [
+      {
+        "label": "8,2 t",
+        "detail": "428"
+      },
+      {
+        "label": "8,5 t",
+        "detail": "432"
+      },
+      {
+        "label": "9 t",
+        "detail": "434"
+      },
+      {
+        "label": "9,5 t",
+        "detail": "444"
+      }
+    ]
+  },
+  {
+    "slug": "accessoire-brh",
+    "name": "BRH (brise-roche hydraulique)",
+    "familySlug": "terrassement",
+    "description": "Brise-roche hydraulique pour démolition et fragmentation de roche.",
+    "variants": []
+  },
+  {
+    "slug": "accessoire-pince-cisaille-ferraille",
+    "name": "Pince cisaille ferraille",
+    "familySlug": "terrassement",
+    "description": "Pince cisaille hydraulique pour le découpage et le tri de la ferraille.",
+    "variants": []
+  },
+  {
+    "slug": "accessoire-broyeur-beton",
+    "name": "Broyeur béton",
+    "familySlug": "terrassement",
+    "description": "Broyeur à béton pour démolition et séparation béton / acier.",
+    "variants": []
+  },
+  {
+    "slug": "accessoire-godet-tilt-rotator",
+    "name": "Godet tilt rotator",
+    "familySlug": "terrassement",
+    "description": "Godet orientable et rotatif (tilt rotator) pour un travail de précision.",
+    "variants": []
+  },
+  {
+    "slug": "accessoire-broyeur-vegetaux",
+    "name": "Broyeur végétaux",
+    "familySlug": "terrassement",
+    "description": "Broyeur pour le débroussaillage et la valorisation des végétaux.",
+    "variants": []
+  },
+  {
+    "slug": "accessoire-pince-de-tri",
+    "name": "Pince de tri",
+    "familySlug": "terrassement",
+    "description": "Pince de tri pour la manutention et le tri des déchets de chantier.",
+    "variants": []
+  },
+  {
+    "slug": "accessoire-fraise-hydraulique",
+    "name": "Fraise hydraulique",
+    "familySlug": "terrassement",
+    "description": "Fraise hydraulique pour le rabotage de roche et de béton.",
+    "variants": []
+  },
+  {
+    "slug": "accessoire-benne-preneuse",
+    "name": "Benne preneuse",
+    "familySlug": "terrassement",
+    "description": "Benne preneuse pour le chargement et la manutention de matériaux en vrac.",
+    "variants": []
+  },
+  {
+    "slug": "balayeuse-thp",
+    "name": "Balayeuse THP",
+    "familySlug": "transport-et-voirie",
+    "description": "Balayeuse THP pour le nettoyage de voirie et de chantier, capacité de benne et de cuve variable.",
+    "variants": [
+      {
+        "label": "7,5 m³ · 3200 L"
+      },
+      {
+        "label": "9 m³ · 3000 L"
+      },
+      {
+        "label": "7,5 m³ · 5000 L"
+      },
+      {
+        "label": "11 m³ · 7000 L"
+      }
+    ]
+  },
+  {
+    "slug": "tracteur-benne",
+    "name": "Tracteur benne",
+    "familySlug": "transport-et-voirie",
+    "description": "Tracteur équipé benne pour le transport de matériaux, avec option balayeuse avant.",
+    "variants": [
+      {
+        "label": "18 t"
+      },
+      {
+        "label": "18 t",
+        "detail": "+ balayeuse avant"
+      },
+      {
+        "label": "24 t"
+      },
+      {
+        "label": "24 t",
+        "detail": "+ balayeuse avant"
+      }
+    ]
+  },
+  {
+    "slug": "tracteur-cuve",
+    "name": "Tracteur cuve",
+    "familySlug": "transport-et-voirie",
+    "description": "Tracteur équipé cuve pour l’arrosage et l’épandage, du 10 000 L au 18 000 L.",
+    "variants": [
+      {
+        "label": "10 000 L",
+        "detail": "queue de carpe"
+      },
+      {
+        "label": "10 000 L",
+        "detail": "+ enfouisseur"
+      },
+      {
+        "label": "10 000 L",
+        "detail": "+ balayeuse avant"
+      },
+      {
+        "label": "14 000 L",
+        "detail": "queue de carpe"
+      },
+      {
+        "label": "14 000 L",
+        "detail": "+ enfouisseur"
+      },
+      {
+        "label": "14 000 L",
+        "detail": "+ balayeuse avant"
+      },
+      {
+        "label": "18 000 L",
+        "detail": "queue de carpe"
+      },
+      {
+        "label": "18 000 L",
+        "detail": "+ enfouisseur"
+      },
+      {
+        "label": "18 000 L",
+        "detail": "+ balayeuse avant"
+      }
+    ]
+  },
+  {
+    "slug": "rouleau-tandem",
+    "name": "Rouleau compacteur tandem",
+    "familySlug": "compactage",
+    "description": "Rouleau compacteur tandem vibrant pour enrobés et graves, du 1,7 t au 14 t.",
+    "variants": [
+      {
+        "label": "1,7 t · 100 cm",
+        "detail": "BW100"
+      },
+      {
+        "label": "2,5 t · 120 cm",
+        "detail": "BW120"
+      },
+      {
+        "label": "4,5 t · 138 cm",
+        "detail": "BW138"
+      },
+      {
+        "label": "7 t · 150 cm",
+        "detail": "BW141"
+      },
+      {
+        "label": "8 t · 168 cm · double vibration",
+        "detail": "BW154"
+      },
+      {
+        "label": "10 t · 168 cm",
+        "detail": "BW161"
+      },
+      {
+        "label": "10 t · 168 cm · double vibration",
+        "detail": "BW161"
+      },
+      {
+        "label": "12 t · 199 cm",
+        "detail": "BW190"
+      },
+      {
+        "label": "12 t · 199 cm · double vibration",
+        "detail": "BW190"
+      },
+      {
+        "label": "13 t · 200 cm",
+        "detail": "BW191"
+      },
+      {
+        "label": "13 t · 200 cm · double vibration",
+        "detail": "BW191"
+      },
+      {
+        "label": "14 t · 213 cm",
+        "detail": "BW206"
+      }
+    ]
+  },
+  {
+    "slug": "rouleau-monocylindre-vibrant",
+    "name": "Rouleau compacteur monocylindre vibrant",
+    "familySlug": "compactage",
+    "description": "Rouleau compacteur monocylindre vibrant pour la compaction des sols, versions lisse et pieds dameurs (PDM).",
+    "variants": [
+      {
+        "label": "1"
+      },
+      {
+        "label": "2"
+      },
+      {
+        "label": "3"
+      },
+      {
+        "label": "4"
+      },
+      {
+        "label": "5"
+      },
+      {
+        "label": "1 · PDM",
+        "detail": "pieds dameurs"
+      },
+      {
+        "label": "2 · PDM",
+        "detail": "pieds dameurs"
+      },
+      {
+        "label": "3 · PDM",
+        "detail": "pieds dameurs"
+      },
+      {
+        "label": "4 · PDM",
+        "detail": "pieds dameurs"
+      },
+      {
+        "label": "5 · PDM",
+        "detail": "pieds dameurs"
+      }
+    ]
+  },
+  {
+    "slug": "rouleau-sur-pneus",
+    "name": "Rouleau compacteur sur pneus",
+    "familySlug": "compactage",
+    "description": "Rouleau compacteur sur pneus pour la finition des enrobés et des graves.",
+    "variants": [
+      {
+        "label": "9 roues · 175 cm",
+        "detail": "CW16"
+      },
+      {
+        "label": "11 roues · 213 cm",
+        "detail": "CW16"
+      },
+      {
+        "label": "8 roues · 209 cm",
+        "detail": "CW34"
+      }
+    ]
+  }
+]
