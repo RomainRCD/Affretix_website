@@ -1,8 +1,19 @@
+import MACHINES_DATA from '@/data/machines.json'
+import { machineFamilies } from '@/data/families'
+
+// Chiffres dérivés de machines.json — ne jamais remettre de compteur en dur.
+const totalEngins = (MACHINES_DATA as { variants?: unknown[] }[]).reduce(
+  (n, m) => n + (m.variants?.length ?? 0),
+  0,
+)
+const familiesRaw = machineFamilies.map((f) => f.name).join(', ')
+const familiesLine = familiesRaw.charAt(0) + familiesRaw.slice(1).toLowerCase()
+
 const stats = [
   {
-    value: '142',
+    value: String(totalEngins),
     label: 'Engins disponibles',
-    description: 'Terrassement, transport et voirie, compactage',
+    description: familiesLine,
   },
   {
     value: '100%',
