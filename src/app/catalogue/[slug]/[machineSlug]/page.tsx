@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { machines } from '@/data/machines'
@@ -139,9 +140,21 @@ export default async function MachinePage({
                 <span className="flex items-center gap-2"><Dot /> Devis sous 24 h</span>
               </div>
 
-              <div className="mt-6 border border-dashed border-white/15 rounded-lg h-28 flex items-center justify-center text-white/30 font-body text-xs uppercase tracking-widest">
-                Visuel {nameLower} — à venir
-              </div>
+              {machine.imageUrl ? (
+                <div className="mt-6 relative aspect-[4/3] max-w-md rounded-lg overflow-hidden bg-white">
+                  <Image
+                    src={machine.imageUrl}
+                    alt={machine.name}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                  />
+                </div>
+              ) : (
+                <div className="mt-6 border border-dashed border-white/15 rounded-lg h-28 flex items-center justify-center text-white/30 font-body text-xs uppercase tracking-widest">
+                  Visuel {nameLower} — à venir
+                </div>
+              )}
             </div>
 
             <div className="lg:sticky lg:top-6">
