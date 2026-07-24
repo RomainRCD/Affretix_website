@@ -1,5 +1,10 @@
 import Link from 'next/link'
 import { machineFamilies } from '@/data/families'
+import MACHINES_DATA from '@/data/machines.json'
+
+// Chiffres dérivés de machines.json — ne jamais remettre de compteur en dur.
+const totalTypes = (MACHINES_DATA as unknown[]).length
+const totalFamilies = machineFamilies.length
 
 export function FamilyGrid() {
   return (
@@ -11,7 +16,7 @@ export function FamilyGrid() {
             Nos familles de machines
           </h2>
           <p className="font-body text-lg text-grey-dark/60 max-w-xl mx-auto">
-            67 types d&apos;engins répartis en 8 familles. Toujours avec opérateur qualifié.
+            {totalTypes} types d&apos;engins répartis en {totalFamilies} familles. Toujours avec opérateur qualifié.
           </p>
         </div>
 
