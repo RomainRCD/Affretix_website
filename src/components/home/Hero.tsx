@@ -1,6 +1,16 @@
 "use client"
 import { motion } from "motion/react"
 import { Button } from "@/components/ui/Button"
+import MACHINES_DATA from "@/data/machines.json"
+import { machineFamilies } from "@/data/families"
+
+// Chiffres dérivés de machines.json — ne jamais remettre de compteur en dur.
+const totalEngins = (MACHINES_DATA as { variants?: unknown[] }[]).reduce(
+  (n, m) => n + (m.variants?.length ?? 0),
+  0,
+)
+const familiesRaw = machineFamilies.map((f) => f.name).join(", ")
+const familiesLine = familiesRaw.charAt(0) + familiesRaw.slice(1).toLowerCase()
 
 export function Hero() {
   return (
@@ -41,8 +51,8 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          142 engins disponibles. Terrassement, transport et voirie, compactage.
-          Filiale du groupe LEVA — présents sur toute la région.
+          {totalEngins} engins disponibles. {familiesLine}.
+          Présents sur toute la région.
         </motion.p>
 
         {/* CTAs */}
